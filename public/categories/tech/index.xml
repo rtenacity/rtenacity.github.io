@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tech on rohanarni.com</title>
+    <link>/categories/tech/</link>
+    <description>Recent content in Tech on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Sep 2021 19:51:50 +0000</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech Review #1: Blue Snowball</title>
+      <link>/posts/tech-review-blue-snowball/</link>
+      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
+      
+      <guid>/posts/tech-review-blue-snowball/</guid>
+      <description>Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball! You may have heard of its older brother, the Blue Yeti, which is a professional-grade large microphone, but Blue, a Logitech brand, made another microphone, called the Blue Snowball.
+The Blue Snowball is half the price of the Yeti at 49.99, and is half the size. It sports a unique design, with a three-legged stand and a ball-shaped microphone.</description>
+    </item>
+    
+  </channel>
+</rss>

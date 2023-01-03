@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" dir=" auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ev3 Projects: Car Following | rohanarni.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350.">
+<meta name="author" content="Rohan Arni">
+<link rel="canonical" href="/posts/ev3carfollow/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e91148c41f62ffe58906ad532bdc0903061c07db529c1c441bd5ead190d6bc0f.css" integrity="sha256-6RFIxB9i/&#43;WJBq1TK9wJAwYcB9tSnBxEG9Xq0ZDWvA8=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Ev3 Projects: Car Following" />
+<meta property="og:description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/ev3carfollow/" /><meta property="og:image" content="/posts/2022-03-16_ev3-projects-car-following/images/1.jpeg" /><meta property="og:image" content="/posts/2022-03-16_ev3-projects-car-following/images/2.jpeg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-16T01:41:07+00:00" />
+<meta property="article:modified_time" content="2023-01-03T17:49:20-05:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/2022-03-16_ev3-projects-car-following/images/1.jpeg"/>
+
+<meta name="twitter:title" content="Ev3 Projects: Car Following"/>
+<meta name="twitter:description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Ev3 Projects: Car Following",
+      "item": "/posts/ev3carfollow/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ev3 Projects: Car Following",
+  "name": "Ev3 Projects: Car Following",
+  "description": "This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.\nThe thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350.",
+  "keywords": [
+    
+  ],
+  "articleBody": "This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.\nThe thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.\nThe physical aspect of the robot is quite simple. I built a car that was modeled behind a formula one car (for the cool factor). It has an ultrasonic sensor on the front part of the car and a touch sensor on the back. The robot also has two large motors in the back for driving, and also has steering capabilities using the medium motor. However, I have disabled the steering capabilities to prevent the robot from veering.\nSide view\nTop view\nNow, let’s break down the code. The code can be found at my repository here.\n#!/usr/bin/python # coding: utf-8 # this program lets your ev3 follow a toy car accurately from ev3dev2.motor import * from ev3dev2.sensor.lego import UltrasonicSensor, GyroSensor, InfraredSensor, TouchSensor from ev3dev2.led import Leds from ev3dev2.sound import Sound from sys import stderr from time import sleep` These lines are just imports from the necessary libraries. `left_motor = LargeMotor(OUTPUT_C) right_motor = LargeMotor(OUTPUT_D) us = UltrasonicSensor() ts = TouchSensor()` These lines are just so that I can reference these items easily later in the program.\ncorrection = 0 kp = 1 power = 60 target = 10 This is where things begin to get interesting. The variable correction is just a blank variable for now. This will be used later in the program.\nThe variable kp, also known as the “constant of proportionality”, is the factor which changes how sharp the movement is. I’ve left it as the default value of 1.\nPower is the base speed of the car. I’ve set it to 60, which means that the motor is going at 60% full power as a baseline.\nTarget is the target range from the toy car to the Ev3. I’ve set it to 10 cm.\nleft_motor.run_direct() right_motor.run_direct() These lines start the motors.\nwhile True: error = target - us.distance_centimeters Error is the difference between the target value and the distance value. This will come in handy for the proportional line following.\nif ts.value(): break This line turns the touch sensor into a killswitch by breaking out of the while true loop.\nif error \u0026lt; 0: correction = (abs(float(error)/5))*kp if (correction+power) \u0026gt;= 100 or (correction+power) \u0026lt;= -100: correction = -(power) If error is less than 0, the Ev3 is too far from the car. The variable correction is error divided by 5 multiplied by the kp (constant of proportionality). Correction is added to power to change the final wheel speed, which speeds up the car (not shown here).\nThe second if statement is just to make sure the final wheel speed is not above 100 or less than -100, otherwise the robot will error out.\nif error \u0026gt; 0: correction = -(power) If error is more than 0, the Ev3 is too close to the car. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nif error == 0: correction = -(power) If error is equal than 0, the Ev3 is the perfect distance from the car, which makes the Ev3 stop. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nif us.distance_centimeters == 255.0: correction = -(power) The ultrasonic sensor has an error where it randomly reads 255 cm, so this line makes sure it doesn’t glitch out and mess up the algorithm by making the car stop. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nprint(str(target)+\u0026#34;, \u0026#34;+str(us.distance_centimeters)+\u0026#34;, \u0026#34;+str(error)+\u0026#34;, \u0026#34;+str(correction)) This line is for debugging. It prints out the values of each of the important variables to figure out any issues with the robot.\nleft_motor.duty_cycle_sp= int(-(power + correction)) right_motor.duty_cycle_sp= int(-(power + correction)) These lines set the final wheel speed. I made the value negative because my robot’s wheels are backward.\nsleep(0.1) This line makes sure that the CPU doesn’t overheat.\nleft_motor.stop() right_motor.stop() When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.\nAnd that’s it!\nNote from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.\n",
+  "wordCount" : "895",
+  "inLanguage": "en",
+  "datePublished": "2022-03-16T01:41:07.05Z",
+  "dateModified": "2023-01-03T17:49:20-05:00",
+  "author":{
+    "@type": "Person",
+    "name": "Rohan Arni"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/posts/ev3carfollow/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "rohanarni.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="
+    top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">rohanarni.com</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                    </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+    <header class="top" class="post-header">
+        
+        <h1 class="post-title">
+            Ev3 Projects: Car Following
+        </h1>
+        <div class="post-meta"><span title='2022-03-16 01:41:07.05 +0000 UTC'>March 16, 2022</span>&nbsp;·&nbsp;Rohan Arni
+
+</div>
+    </header> 
+    <div class="post-content"><p>This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.</p>
+<p>The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out <a href="https://github.com/rtenacity/LineFollower">here</a>) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.</p>
+<p>The physical aspect of the robot is quite simple. I built a car that was modeled behind a formula one car (for the cool factor). It has an ultrasonic sensor on the front part of the car and a touch sensor on the back. The robot also has two large motors in the back for driving, and also has steering capabilities using the medium motor. However, I have disabled the steering capabilities to prevent the robot from veering.</p>
+<p><img loading="lazy" src="images/1.jpeg#layoutTextWidth" alt="image"  />
+
+Side view</p>
+<p><img loading="lazy" src="images/2.jpeg#layoutTextWidth" alt="image"  />
+
+Top view</p>
+<p>Now, let’s break down the code. The code can be found at my repository <a href="https://github.com/rtenacity/CarFollower">here</a>.</p>
+<pre tabindex="0"><code>#!/usr/bin/python  
+# coding: utf-8  
+
+# this program lets your ev3 follow a toy car accurately  
+
+from ev3dev2.motor import *  
+from ev3dev2.sensor.lego import UltrasonicSensor, GyroSensor, InfraredSensor, TouchSensor  
+from ev3dev2.led import Leds  
+from ev3dev2.sound import Sound  
+from sys import stderr  
+from time import sleep`
+
+These lines are just imports from the necessary libraries.
+`left_motor = LargeMotor(OUTPUT_C)   
+right_motor = LargeMotor(OUTPUT_D)  
+us = UltrasonicSensor()  
+ts = TouchSensor()`
+</code></pre><p>These lines are just so that I can reference these items easily later in the program.</p>
+<pre tabindex="0"><code>correction = 0  
+
+kp = 1   
+power = 60  
+target = 10
+</code></pre><p>This is where things begin to get interesting. The variable <strong>correction</strong> is just a blank variable for now. This will be used later in the program.</p>
+<p>The variable <strong>kp</strong>, also known as the “constant of proportionality”, is the factor which changes how sharp the movement is. I’ve left it as the default value of 1.</p>
+<p><strong>Power</strong> is the base speed of the car. I’ve set it to 60, which means that the motor is going at 60% full power as a baseline.</p>
+<p><strong>Target</strong> is the target range from the toy car to the Ev3. I’ve set it to 10 cm.</p>
+<pre tabindex="0"><code>left_motor.run_direct()  
+right_motor.run_direct()
+</code></pre><p>These lines start the motors.</p>
+<pre tabindex="0"><code>while True:  
+    error = target - us.distance_centimeters
+</code></pre><p><strong>Error</strong> is the difference between the target value and the distance value. This will come in handy for the <strong>proportional</strong> line following.</p>
+<pre tabindex="0"><code>if ts.value():  
+        break
+</code></pre><p>This line turns the touch sensor into a killswitch by breaking out of the while true loop.</p>
+<pre tabindex="0"><code>if error &amp;lt; 0:   
+        correction = (abs(float(error)/5))*kp  
+        if (correction+power) &amp;gt;= 100 or (correction+power) &amp;lt;= -100:   
+            correction = -(power)
+</code></pre><p>If <strong>error</strong> is less than 0, the Ev3 is too far from the car. The variable <strong>correction</strong> is <strong>error</strong> divided by 5 multiplied by the <strong>kp</strong> (constant of proportionality). <strong>Correction</strong> is added to <strong>power</strong> to change the final wheel speed, which speeds up the car (not shown here).</p>
+<p>The second if statement is just to make sure the final wheel speed is not above 100 or less than -100, otherwise the robot will error out.</p>
+<pre tabindex="0"><code>if error &amp;gt; 0:  
+        correction = -(power)
+</code></pre><p>If <strong>error</strong> is more than 0, the Ev3 is too close to the car. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<pre tabindex="0"><code>if error == 0:   
+        correction = -(power)
+</code></pre><p>If <strong>error</strong> is equal than 0, the Ev3 is the perfect distance from the car, which makes the Ev3 stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<pre tabindex="0"><code>if us.distance_centimeters == 255.0:  
+        correction = -(power)
+</code></pre><p>The ultrasonic sensor has an error where it randomly reads 255 cm, so this line makes sure it doesn’t glitch out and mess up the algorithm by making the car stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<pre tabindex="0"><code>print(str(target)+&amp;#34;, &amp;#34;+str(us.distance_centimeters)+&amp;#34;, &amp;#34;+str(error)+&amp;#34;, &amp;#34;+str(correction))
+</code></pre><p>This line is for debugging. It prints out the values of each of the important variables to figure out any issues with the robot.</p>
+<pre tabindex="0"><code>left_motor.duty_cycle_sp= int(-(power + correction)) right_motor.duty_cycle_sp= int(-(power + correction)) 
+</code></pre><p>These lines set the final wheel speed. I made the value negative because my robot’s wheels are backward.</p>
+<pre tabindex="0"><code>sleep(0.1)
+</code></pre><p>This line makes sure that the CPU doesn’t overheat.</p>
+<pre tabindex="0"><code>left_motor.stop()  
+right_motor.stop()
+</code></pre><p>When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.</p>
+<p>And that’s it!</p>
+<p><em>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.</em></p>
+
+
+    </div>
+
+    <footer class="post-footer" class="bottom">
+        <ul class="post-tags">
+        </ul>
+    </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="">rohanarni.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>

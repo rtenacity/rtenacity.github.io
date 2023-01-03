@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Law on rohanarni.com</title>
+    <link>/categories/law/</link>
+    <description>Recent content in Law on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jun 2022 04:25:03 +0000</lastBuildDate><atom:link href="/categories/law/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marbury V. Madison: The First Supreme Court Case</title>
+      <link>/posts/marbury-v-madison/</link>
+      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
+      
+      <guid>/posts/marbury-v-madison/</guid>
+      <description>On February 24, 1803, the first and most influential supreme court case of America occurred. This case lives in obscurity to most citizens, but without it, the Supreme Court would not have the power it has today. The issue of the case arose from a seemingly simple dispute. It all began during the Election of 1800. When incumbent president John Adams was voted out of office, he created a scheme to keep his party, the Federalists, in control of one of the branches of the government.</description>
+    </item>
+    
+  </channel>
+</rss>

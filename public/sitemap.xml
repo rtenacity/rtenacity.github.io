@@ -2,26 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
+    <loc>/categories/history/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
+    <loc>/categories/law/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
+    <loc>/posts/marbury-v-madison/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
+    <loc>/categories/old/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
+    <loc>/categories/politics/</loc>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
+  </url><url>
     <loc>/posts/</loc>
-    <lastmod>2023-01-03T13:25:34-05:00</lastmod>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2023-01-03T13:25:34-05:00</lastmod>
+    <lastmod>2023-01-03T17:49:21-05:00</lastmod>
   </url><url>
-    <loc>/posts/test1/</loc>
-    <lastmod>2023-01-03T13:25:34-05:00</lastmod>
+    <loc>/categories/ev3/</loc>
+    <lastmod>2023-01-03T17:49:20-05:00</lastmod>
   </url><url>
-    <loc>/posts/fll/</loc>
-    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
+    <loc>/posts/ev3carfollow/</loc>
+    <lastmod>2023-01-03T17:49:20-05:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-02-27T00:00:00+00:00</lastmod>
+    <loc>/categories/ev3dev/</loc>
+    <lastmod>2023-01-03T17:49:20-05:00</lastmod>
+  </url><url>
+    <loc>/categories/robotics/</loc>
+    <lastmod>2023-01-03T17:49:20-05:00</lastmod>
+  </url><url>
+    <loc>/categories/reviews/</loc>
+    <lastmod>2023-01-03T17:49:19-05:00</lastmod>
+  </url><url>
+    <loc>/categories/tech/</loc>
+    <lastmod>2023-01-03T17:49:19-05:00</lastmod>
+  </url><url>
+    <loc>/posts/tech-review-blue-snowball/</loc>
+    <lastmod>2023-01-03T17:49:19-05:00</lastmod>
+  </url><url>
+    <loc>/posts/why-china-history-matters/</loc>
+    <lastmod>2023-01-03T17:49:18-05:00</lastmod>
+  </url><url>
+    <loc>/categories/chemistry/</loc>
+    <lastmod>2023-01-03T17:49:17-05:00</lastmod>
+  </url><url>
+    <loc>/categories/physics/</loc>
+    <lastmod>2023-01-03T17:49:17-05:00</lastmod>
+  </url><url>
+    <loc>/categories/science/</loc>
+    <lastmod>2023-01-03T17:49:17-05:00</lastmod>
+  </url><url>
+    <loc>/posts/periodic-table-of-elements/</loc>
+    <lastmod>2023-01-03T17:49:17-05:00</lastmod>
+  </url><url>
+    <loc>/categories/books/</loc>
+    <lastmod>2023-01-03T17:49:16-05:00</lastmod>
+  </url><url>
+    <loc>/categories/literature/</loc>
+    <lastmod>2023-01-03T17:49:16-05:00</lastmod>
+  </url><url>
+    <loc>/posts/my-fav-books/</loc>
+    <lastmod>2023-01-03T17:49:16-05:00</lastmod>
+  </url><url>
+    <loc>/categories/reading/</loc>
+    <lastmod>2023-01-03T17:49:16-05:00</lastmod>
+  </url><url>
+    <loc>/categories/minecraft/</loc>
+    <lastmod>2023-01-03T17:49:14-05:00</lastmod>
+  </url><url>
+    <loc>/posts/rise-fall-rise-minecraft/</loc>
+    <lastmod>2023-01-03T17:49:14-05:00</lastmod>
+  </url><url>
+    <loc>/categories/video-games/</loc>
+    <lastmod>2023-01-03T17:49:14-05:00</lastmod>
+  </url><url>
+    <loc>/posts/the-big-bang/</loc>
+    <lastmod>2023-01-03T17:49:13-05:00</lastmod>
   </url><url>
     <loc>/categories/chess/</loc>
+    <lastmod>2023-01-03T17:49:12-05:00</lastmod>
+  </url><url>
+    <loc>/posts/chess-part-two/</loc>
+    <lastmod>2023-01-03T17:49:12-05:00</lastmod>
+  </url><url>
+    <loc>/posts/first-lego-league/fll/</loc>
+    <lastmod>2021-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/chess-part-one/chess/</loc>
     <lastmod>2021-02-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/chess/</loc>
-    <lastmod>2021-02-27T00:00:00+00:00</lastmod>
+    <loc>/posts/welcome/</loc>
+    <lastmod>2023-01-03T17:49:07-05:00</lastmod>
   </url><url>
     <loc>/about/</loc>
   </url><url>

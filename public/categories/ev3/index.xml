@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>EV3 on rohanarni.com</title>
+    <link>/categories/ev3/</link>
+    <description>Recent content in EV3 on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Mar 2022 01:41:07 +0000</lastBuildDate><atom:link href="/categories/ev3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ev3 Projects: Car Following</title>
+      <link>/posts/ev3carfollow/</link>
+      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
+      
+      <guid>/posts/ev3carfollow/</guid>
+      <description>This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350.</description>
+    </item>
+    
+    <item>
+      <title>First Lego League</title>
+      <link>/posts/first-lego-league/fll/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/first-lego-league/fll/</guid>
+      <description>The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
+Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions.</description>
+    </item>
+    
+  </channel>
+</rss>
