@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rohanarni.com</title>
+    <link>/</link>
+    <description>Recent content on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jan 2023 13:25:34 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test1</title>
+      <link>/posts/test1/</link>
+      <pubDate>Tue, 03 Jan 2023 13:25:34 -0500</pubDate>
+      
+      <guid>/posts/test1/</guid>
+      <description>test1</description>
+    </item>
+    
+    <item>
+      <title>First Lego League</title>
+      <link>/posts/fll/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/fll/</guid>
+      <description>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.
+The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
+Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019.</description>
+    </item>
+    
+    <item>
+      <title>Chess — The Basics</title>
+      <link>/posts/chess/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chess/</guid>
+      <description>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.
+I have always thought about chess as a hobby. A simple game, and nothing more. Until a month ago. I realized that chess is so much more than just a game. There are strategies, tactics, gambits, baits and so much more.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>search</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

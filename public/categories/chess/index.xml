@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Chess on rohanarni.com</title>
+    <link>/categories/chess/</link>
+    <description>Recent content in Chess on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/chess/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chess — The Basics</title>
+      <link>/posts/chess/</link>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/chess/</guid>
+      <description>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.
+I have always thought about chess as a hobby. A simple game, and nothing more. Until a month ago. I realized that chess is so much more than just a game. There are strategies, tactics, gambits, baits and so much more.</description>
+    </item>
+    
+  </channel>
+</rss>
