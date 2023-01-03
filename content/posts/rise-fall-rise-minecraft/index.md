@@ -22,7 +22,7 @@ Minecraft: A classic example of popular trends reviving a once popular game. Whe
 
 Minecraft was initially released as Minecraft Classic in 2009. It looked like this:
 
-![image](/posts/2021-03-21_rise-fall-and-rise-again-of-minecraft/images/1.jpeg#layoutTextWidth)
+![image](images/1.jpeg#layoutTextWidth)
 
 
 A far cry from the current state of the game. It had crude graphics, unintuitive controls, and terrible world generation. But it was a smash hit. Features upon features were stacked until, in 2011, version 1.0 was released.

@@ -23,7 +23,7 @@ Well, it’s time for my first tech review! Today, I’m gonna be talking about 
 
 The Blue Snowball is half the price of the Yeti at 49.99, and is half the size. It sports a unique design, with a three-legged stand and a ball-shaped microphone.
 
-![image](/posts/2021-09-12_tech-review-sharp1-blue-snowball/images/1.jpg#layoutTextWidth)
+![image](images/1.jpg#layoutTextWidth)
 
 
 On my previous mic, the Tonor TC-777, there were so many issues. The mic constantly cut out, and sometimes the mic broke and outputted no audio. The audio itself was terrible. My mic picked up every vibration my desk made while I typed on my keyboard. The vocals were muffled, my keyboard sounded terrible, and my computer fan was so loud. **_DO NOT GET THE TONOR MIC._ **For the same price, get this instead.

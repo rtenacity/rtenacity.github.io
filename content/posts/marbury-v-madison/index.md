@@ -24,7 +24,7 @@ First of all, the case created the principle of judicial review. Judicial review
 
 Along with a legal problem, the case created a great political dilemma for Marshall. Ruling with Marbury and asking Madison and Jefferson to deliver Marbury’s commission would appear weak, because Madison and Jefferson could just as easily ignore the order. This would be a crippling blow to the new court, who needed to appear strong and powerful. However, by siding with Madison, Marshall, a Federalist, would be handing Jefferson and Madison, Democratic-Republicans, a free victory, and would look like the Supreme Court was backing down. Marshall’s next decision is single-handedly the most important legal decision in the history of the United States.
 
-![image](/posts/2022-06-17_marbury-v.-madison-the-first-supreme-court-case/images/1.jpeg#layoutTextWidth)
+![image](images/1.jpeg#layoutTextWidth)
 John Marshall
 
 
