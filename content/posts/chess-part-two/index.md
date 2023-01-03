@@ -19,6 +19,7 @@ images:
 aliases:
     - "/chess-openings-part-2-gambits-bca8cca7af65"
 
+categories: ["Chess", "Old"]
 ---
 
 Last week, I went over openings. Let’s recap the basics:

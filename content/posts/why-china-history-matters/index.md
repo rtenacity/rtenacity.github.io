@@ -14,6 +14,7 @@ subtitle: "Hi. It’s been a while. Sorry for not writing at all! I’ve been pr
 aliases:
     - "/why-chinas-history-matters-so-much-513a33875074"
 
+categories: ["History", "Politics", "Old"]
 ---
 
 Hi. It’s been a while. Sorry for not writing at all! I’ve been pretty busy, but I didn’t write because I was very lazy. So anyways, I’m back! Let’s get into today’s topic!
@@ -29,3 +30,5 @@ The People’s Republic of China was formally established on October 1, 1949. Af
 China was formed on the ideals of unity. China has a one-party system, leaning into its imperialistic roots by creating a one-party rule. America, however, was created on the idea of independence. Every person is different, and the idea of independence runs in America’s history.
 
 A country that is not a free-market democracy succeeding is a new concept for many. But the concept that a country has to be free to be successful is a western concept. Clearly, that concept is up for debate, due to the overwhelming success of China. China cannot be explained in typical western concepts, which is what makes China so complex to most experts. It is simply impossible to explain China with western ideals. As time goes on, the idea that the west is the golden standard for a country will fade, and other cultures and concepts will arise, similar to China. One thing is for sure, and that the gold standard of westernization is over. And it’s all thanks to China’s history.
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

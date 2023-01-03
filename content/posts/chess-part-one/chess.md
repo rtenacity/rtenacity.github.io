@@ -2,7 +2,7 @@
 title: "Chess — The Basics"
 date: 2021-02-27
 draft: false
-categories: ["Chess"]
+categories: ["Chess", "Old"]
 
 ---
 

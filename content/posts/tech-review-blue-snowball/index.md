@@ -16,6 +16,7 @@ images:
 aliases:
     - "/tech-review-1-blue-snowball-2d6b9511794d"
 
+categories: ["Tech", "Reviews", "Old"]
 ---
 
 Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball! You may have heard of its older brother, the Blue Yeti, which is a professional-grade large microphone, but Blue, a Logitech brand, made another microphone, called the Blue Snowball.
@@ -36,3 +37,5 @@ To sum it up, the Blue Snowball is a great mic. The audio is great, but the desi
 Thanks for tuning in! See you soon!
 
 Rohan
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

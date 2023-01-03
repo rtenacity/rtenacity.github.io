@@ -14,6 +14,7 @@ subtitle: "First of all, The Big Bang Theory should be called The Big Bang Model
 aliases:
     - "/the-big-bang-7cd58c53d61d"
 
+categories: ["Physics", "Science", "Old"]
 ---
 
 First of all, The Big Bang Theory should be called The Big Bang Model. Just like the Theory of Evolution should be called Evolution. The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.
@@ -27,3 +28,5 @@ So now we have 4 distinct forces. But we don’t have protons and neutrons yet. 
 I hope you enjoyed this article!
 
 (It was also Einstein’s birthday on the day of writing.)
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

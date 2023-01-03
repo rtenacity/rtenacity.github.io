@@ -16,7 +16,7 @@ images:
 
 aliases:
     - "/ev3-projects-car-following-8d98960310db"
-
+categories: ["EV3", "Robotics", "ev3dev", "Old"]
 ---
 
 This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
@@ -113,15 +113,9 @@ right_motor.stop()`
 
 When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.
 
-And that’s it! Here’s a video of the robot in action:
+And that’s it!
 
 
 
 
-Ev3 in action
-
-
-
-Thanks for reading! I hope you enjoyed this article.
-
-Note from the author: Hello there! It’s been a while. I’ve been pretty busy with school and other things, but now I’m back. I have multiple articles planned for the future.
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

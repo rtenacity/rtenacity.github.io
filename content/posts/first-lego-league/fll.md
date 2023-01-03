@@ -1,10 +1,11 @@
 ---
 title: "First Lego League"
+author: "Rohan Arni"
 date: 2021-02-28
 draft: false
----
 
-Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog. 
+categories: ["EV3", "Robotics", "ev3dev"]
+---
 
 The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
 
@@ -111,3 +112,5 @@ Thanks for reading!
 ~~~
 print("End of file.")
 ~~~
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

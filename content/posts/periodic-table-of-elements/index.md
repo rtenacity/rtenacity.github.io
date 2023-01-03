@@ -13,7 +13,7 @@ subtitle: "It’s on every high school classroom. But only a few people truly un
 
 aliases:
     - "/the-periodic-table-of-elements-76e9d513b83d"
-
+categories: ["Chemistry", "Science", "Physics", "Old"]
 ---
 
 It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.
@@ -33,3 +33,5 @@ There are 7 groups on the periodic table. There are Alkali Metals, Alkaline Eart
 Stay tuned for next week, where we go over some examples and go into further detail!
 
 Thanks for reading!
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

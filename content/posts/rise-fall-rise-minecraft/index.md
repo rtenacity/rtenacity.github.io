@@ -15,7 +15,7 @@ images:
 
 aliases:
     - "/the-rise-fall-and-rise-again-of-minecraft-4097b3db60a6"
-
+categories: ["Video Games", "Minecraft", "Old"]
 ---
 
 Minecraft: A classic example of popular trends reviving a once popular game. When it was first released, it was the hottest game to ever come out. A simple yet unique game. There was no clear objective in the game. It was an infinite world with the capability to do anything. No fancy graphics, no violent gore. How did such a simple game become so popular across the world? Today, let’s look at the rise, fall, and rise again of Minecraft.
@@ -70,3 +70,5 @@ Many youtubers blew up from the SMP, such as TommyInnit, Hannahxxrose, and Purpl
 So this is where we are today. Has Minecraft peaked, or will it keep going? Who knows?
 
 Thanks for reading! Stay tuned!
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*

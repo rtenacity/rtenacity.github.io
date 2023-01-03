@@ -13,7 +13,7 @@ subtitle: "I love to read. Like, LOVE to read. As such, there are some books I l
 
 aliases:
     - "/my-favorite-books-of-all-time-9ebf20f5592e"
-
+categories: ["Literature", "Books", "Reading", "Old"]
 ---
 
 I love to read. Like, LOVE to read. As such, there are some books I loved and some books I hated. So here is my rundown of all my favorite books!
@@ -33,3 +33,5 @@ The Ares Program is a space program run by NASA. The goal is simple for the 5 as
 Steve Jobs by Walter Isaacson is the tale of the life of Steve Jobs, from birth to death. This book has a personal connection to me, because it was the first real nonfiction book I read. All of Walter Isaacson’s books are amazing, but this one is truly one of a kind.
 
 That’s it for this week! I hope you enjoyed!
+
+*Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*
