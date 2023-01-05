@@ -7,7 +7,7 @@ params:
   profileMode:
     enabled: true
     title: "Rohan Arni"
-    subtitle: "Hi there! I’m a freshman at High Technology High School. I’m a programmer, musician, scientist and writer. I play the trumpet and the piano. You can find my code on my GitHub, and you can find my writing at my blog on Medium."
+    subtitle: "Hi there! I’m a freshman at High Technology High School. I’m a programmer, musician, scientist and writer."
     imageUrl: img/profile.png
     buttons:
       - name: Blog

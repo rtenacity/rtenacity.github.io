@@ -4,7 +4,7 @@ author: "Rohan Arni"
 date: 2021-02-28
 draft: false
 
-categories: ["EV3", "Robotics", "ev3dev"]
+categories: ["EV3", "Robotics", "ev3dev", "Old"]
 ---
 
 The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
