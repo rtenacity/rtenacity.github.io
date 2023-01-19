@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Science on rohanarni.com</title>
-    <link>/categories/science/</link>
+    <link>https://rohanarni.com/categories/science/</link>
     <description>Recent content in Science on rohanarni.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 21:54:03 +0000</lastBuildDate><atom:link href="/categories/science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 May 2021 21:54:03 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Periodic Table of Elements</title>
-      <link>/posts/periodic-table-of-elements/</link>
+      <link>https://rohanarni.com/posts/periodic-table-of-elements/</link>
       <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
       
-      <guid>/posts/periodic-table-of-elements/</guid>
+      <guid>https://rohanarni.com/posts/periodic-table-of-elements/</guid>
       <description>It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.
 At a first glance, the periodic table looks like a childish table with all sorts of colors and silly letters. Most people know that those letters stand for elements. What are elements really?
 Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, and electrons.</description>
@@ -20,10 +20,10 @@ Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, 
     
     <item>
       <title>The Big Bang</title>
-      <link>/posts/the-big-bang/</link>
+      <link>https://rohanarni.com/posts/the-big-bang/</link>
       <pubDate>Sun, 14 Mar 2021 23:26:58 +0000</pubDate>
       
-      <guid>/posts/the-big-bang/</guid>
+      <guid>https://rohanarni.com/posts/the-big-bang/</guid>
       <description>First of all, The Big Bang Theory should be called The Big Bang Model. Just like the Theory of Evolution should be called Evolution. The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.
 This whole thing started with a singularity. The singularity is our whole universe, compressed into something smaller than a grain of sand.</description>
     </item>

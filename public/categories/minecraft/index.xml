@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Minecraft on rohanarni.com</title>
-    <link>/categories/minecraft/</link>
+    <link>https://rohanarni.com/categories/minecraft/</link>
     <description>Recent content in Minecraft on rohanarni.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Mar 2021 23:28:57 +0000</lastBuildDate><atom:link href="/categories/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 23:28:57 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/minecraft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Rise, Fall, and Rise Again of Minecraft</title>
-      <link>/posts/rise-fall-rise-minecraft/</link>
+      <link>https://rohanarni.com/posts/rise-fall-rise-minecraft/</link>
       <pubDate>Sun, 21 Mar 2021 23:28:57 +0000</pubDate>
       
-      <guid>/posts/rise-fall-rise-minecraft/</guid>
+      <guid>https://rohanarni.com/posts/rise-fall-rise-minecraft/</guid>
       <description>Minecraft: A classic example of popular trends reviving a once popular game. When it was first released, it was the hottest game to ever come out. A simple yet unique game. There was no clear objective in the game. It was an infinite world with the capability to do anything. No fancy graphics, no violent gore. How did such a simple game become so popular across the world? Today, let’s look at the rise, fall, and rise again of Minecraft.</description>
     </item>
     

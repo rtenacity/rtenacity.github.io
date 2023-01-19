@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chess on rohanarni.com</title>
-    <link>/categories/chess/</link>
+    <link>https://rohanarni.com/categories/chess/</link>
     <description>Recent content in Chess on rohanarni.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Mar 2021 14:30:06 +0000</lastBuildDate><atom:link href="/categories/chess/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 14:30:06 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/chess/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chess Openings, Part 2: Gambits</title>
-      <link>/posts/chess-part-two/</link>
+      <link>https://rohanarni.com/posts/chess-part-two/</link>
       <pubDate>Sun, 07 Mar 2021 14:30:06 +0000</pubDate>
       
-      <guid>/posts/chess-part-two/</guid>
+      <guid>https://rohanarni.com/posts/chess-part-two/</guid>
       <description>Last week, I went over openings. Let’s recap the basics:
 Always attack the center. The center is comprised of these 4 squares:
 Algebraic notation is like the coordinate system for chess. ABC’s for the x axis, and numbers for the y axis. Each piece has a letter designated for its moves. X is for killing. Let’s see an example:
@@ -21,10 +21,10 @@ If the knight were to take the pawn on e4, it would be written as Nxe4.</descrip
     
     <item>
       <title>Chess — The Basics</title>
-      <link>/posts/chess-part-one/chess/</link>
+      <link>https://rohanarni.com/posts/chess-part-one/chess/</link>
       <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>/posts/chess-part-one/chess/</guid>
+      <guid>https://rohanarni.com/posts/chess-part-one/chess/</guid>
       <description>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.
 I have always thought about chess as a hobby. A simple game, and nothing more. Until a month ago. I realized that chess is so much more than just a game. There are strategies, tactics, gambits, baits and so much more.</description>
     </item>
