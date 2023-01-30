@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Art on rohanarni.com</title>
+    <link>https://rohanarni.com/categories/art/</link>
+    <description>Recent content in Art on rohanarni.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jan 2023 09:10:42 -0500</lastBuildDate><atom:link href="https://rohanarni.com/categories/art/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Starry Night</title>
+      <link>https://rohanarni.com/posts/starry-night/</link>
+      <pubDate>Mon, 30 Jan 2023 09:10:42 -0500</pubDate>
+      
+      <guid>https://rohanarni.com/posts/starry-night/</guid>
+      <description>Since the dawn of human civilization, the night sky has captivated us in a way that no other object has. From the silvery moon rising in the sky to the tiny pinpricks of light we now know as stars and planets, humans have spent countless hours observing and documenting the night sky. The process began as far back as the Babylonians and their written record of the night sky, to the Mesoamerican civilizations who based a large majority of their calendar on the moon, and then the Indian and Arabic civilizations with their massive technological advancements to help observe the night sky.</description>
+    </item>
+    
+  </channel>
+</rss>
