@@ -6,22 +6,40 @@
     <description>Recent content in Categories on rohanarni.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2023 09:10:42 -0500</lastBuildDate><atom:link href="https://rohanarni.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>History</title>
+      <link>https://rohanarni.com/categories/history/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rohanarni.com/categories/history/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philosophy</title>
+      <link>https://rohanarni.com/categories/philosophy/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rohanarni.com/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Politics</title>
+      <link>https://rohanarni.com/categories/politics/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://rohanarni.com/categories/politics/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Art</title>
       <link>https://rohanarni.com/categories/art/</link>
       <pubDate>Mon, 30 Jan 2023 09:10:42 -0500</pubDate>
       
       <guid>https://rohanarni.com/categories/art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>https://rohanarni.com/categories/history/</link>
-      <pubDate>Mon, 30 Jan 2023 09:10:42 -0500</pubDate>
-      
-      <guid>https://rohanarni.com/categories/history/</guid>
       <description></description>
     </item>
     
@@ -40,15 +58,6 @@
       <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
       
       <guid>https://rohanarni.com/categories/old/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Politics</title>
-      <link>https://rohanarni.com/categories/politics/</link>
-      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/politics/</guid>
       <description></description>
     </item>
     
