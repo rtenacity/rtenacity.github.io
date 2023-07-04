@@ -1,5 +1,5 @@
 ---
-title: "How Hegelian Philosophy Can Help Us Understand Where The World Is Headed"
+title: "Hegelian Philosophy and the Modern Day"
 author: "Rohan Arni"
 date: 2023-06-17
 
