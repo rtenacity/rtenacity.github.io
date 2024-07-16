@@ -5,18 +5,18 @@ date: 2024-07-15T09:10:42-05:00
 draft: false
 
 subtitle: ""
+katex: true
+markup: 'mmark'
 
 categories: ["Art", "History"] 
 
 ---
 
-$$ \pi $$
+The following
 
-\( C = \frac{5}{9}(F - 32) \)
+$$\int_{a}^{b} x^2 dx$$
 
-\[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]
+Is an integral
 
 
 
