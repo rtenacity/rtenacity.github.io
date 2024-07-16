@@ -13,6 +13,8 @@ categories: ["Art", "History"]
 
 $$\sum_{x=1}^5 y^z$$
 
+$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+
 
 
 
