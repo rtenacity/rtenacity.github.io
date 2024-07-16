@@ -12,11 +12,8 @@ categories: ["Art", "History"]
 
 ---
 
-The following
+$$\sum_{x=1}^5 y^z$$
 
-$$\int_{a}^{b} x^2 dx$$
-
-Is an integral
 
 
 
