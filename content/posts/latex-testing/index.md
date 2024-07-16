@@ -5,8 +5,7 @@ date: 2024-07-15T09:10:42-05:00
 draft: false
 
 subtitle: ""
-katex: true
-markup: 'mmark'
+math: true
 
 categories: ["Art", "History"] 
 
