@@ -30,7 +30,7 @@ x = x' + ut $$
 
 We can rearrange the first statement and write the two equations:
 
-$$ x' = x - ut \\ t' = t $$
+$$ x' = x - ut \\\ t' = t $$
 
 We call this the Galilean Transformation. Really take the time to understand this scenario, as it is the basis for everything to come after. 
 
@@ -55,15 +55,15 @@ $$
 Since the derivative of velocity is acceleration and the derivative of $u$ with respect to $t$ is 0 (derivative of a constant is 0), we get:
 
 $$
-a' = a - 0 \\
+a' = a - 0 \\\
 a' = a
 $$
 
 So, our accelerations are the same! Therefore, 
 $$
-F' = ma' \\
-F = ma \\
-F' = F \\
+F' = ma' \\\
+F = ma \\\
+F' = F
 $$
 We have proven that our forces are the same regardless of the reference frame (as long as it is inertial).
 
