@@ -35,22 +35,22 @@ This is what Einstein set out to do. In his 1905 paper "On The Electrodynamics o
 
 From these two postulates, we can begin to formulate special relativity.  We now know that times are no longer constant, so we get:
 
-$$ x'=x-ut \\\ 
+$$ x'=x-ut $$ $$ 
 x=x'+ut'$$
 
 Since the only constant between two observers is the speed of light, even lengths do not remain the same between observers. Therefore, we need to introduce some factor $\gamma$:
 
-$$x'=\gamma \left(x-ut\right) \\\
+$$x'=\gamma \left(x-ut\right) $$ $$
 x=\gamma (x'+ut')$$
 
 But what is this factor? Well, we must come up with a scenario first. Imagine, instead of a firecracker, a light-pulse traveling at a velocity $c$. I observe it at $(x, t)$, and you observe it at $(x', t')$. Therefore:
-$$ x = ct \\ x' = ct'$$
+$$ x = ct $$ $$ x' = ct'$$
 
 This is because we only agree on the speed of light. Now, armed with all 4 equations, we can derive our factor $\gamma$.
 
 1. Start with our initial equations:
 $$ 
-x' = \gamma(x-ut) \\\ \\\
+x' = \gamma(x-ut) $$ $$
 x= \gamma(x'+ut')
 $$
 
@@ -63,19 +63,19 @@ $$ c^2tt'=\gamma ^2\left(c^2tt'\ +uctt'-uctt'-u^2tt'\right)$$
 
 4. Simplify:
 
-$$ c^2tt'=\gamma ^2tt'\left(c^2-u^2\right) \\\ \\\ c^2=\gamma ^2\left(c^2-u^2\right) $$
+$$ c^2tt'=\gamma ^2tt'\left(c^2-u^2\right) $$ $$ c^2=\gamma ^2\left(c^2-u^2\right) $$
 
 5. Solve in terms of $\gamma$:
 
 $$
-\gamma ^2=\frac{c^2}{c^2-u^2} \\\ \\\ 
-\gamma ^2=\frac{1}{1-\frac{u^2}{c^2}} \\\ \\\ 
-\gamma =\frac{1}{\sqrt{1-\frac{u^2}{c^2}}} $$
+\gamma ^2=\frac{c^2}{c^2-u^2} $$
+$$ \gamma ^2=\frac{1}{1-\frac{u^2}{c^2}}$$ 
+$$\gamma =\frac{1}{\sqrt{1-\frac{u^2}{c^2}}} $$
 
 Bingo! That's our factor, which we call the Lorentz factor. Now, we can plug this in to our equations and get the Lorentz transformations:
 
-$$ x'=\frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}} \\\ \\\
-t'=\frac{t-\frac{ux}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}} $$
+$$ x'=\frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}} $$
+$$t'=\frac{t-\frac{ux}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}} $$
 
 So this is great, but what does all of this stuff even mean? Well, first of all, we can't take distance or time for granted anymore, as they can be different for different observers. Thankfully, we also find that if $u$ is not close to the speed of light, these equations just break down back into good old Galilean transformations. See below:
 
