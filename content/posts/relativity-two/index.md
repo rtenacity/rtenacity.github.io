@@ -35,12 +35,12 @@ This is what Einstein set out to do. In his 1905 paper "On The Electrodynamics o
 
 From these two postulates, we can begin to formulate special relativity.  We now know that times are no longer constant, so we get:
 
-$$ x'=x-ut \\ 
+$$ x'=x-ut \\\ 
 x=x'+ut'$$
 
 Since the only constant between two observers is the speed of light, even lengths do not remain the same between observers. Therefore, we need to introduce some factor $\gamma$:
 
-$$x'=\gamma \left(x-ut\right) \\
+$$x'=\gamma \left(x-ut\right) \\\
 x=\gamma (x'+ut')$$
 
 But what is this factor? Well, we must come up with a scenario first. Imagine, instead of a firecracker, a light-pulse traveling at a velocity $c$. I observe it at $(x, t)$, and you observe it at $(x', t')$. Therefore:
