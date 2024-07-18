@@ -68,7 +68,7 @@ We find that $\omega_0^2 = \frac{k}{m}$, and as a result:
 
 $$\omega_0 = \sqrt{\frac{k}{m}}$$
 
-This is great! We have the angular frequency for a spring. We also know that this is a fixed number based on the properties of the spring itself. From these relationships:
+This is great! We have the angular frequency for a spring. We also know that this is a fixed number based on the properties of the spring itself. From these relationships for frequency ($f$) and period ($T$):
 
 $$f = \frac{\omega}{2\pi}$$
 $$T = \frac {2 \pi}{\omega}$$
@@ -79,7 +79,7 @@ $$\omega_0 = \sqrt{\frac{k}{m}}$$
 $$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$$
 $$T = 2 \pi \sqrt{\frac{m}{k}}$$
 
-Now, anyone who's taken an introductory physics course should vaguely recognize these equations. So this is where they come from!
+Now, anyone who's taken an introductory physics course should vaguely recognize these equations for angular frequency, frequency, and period    . So this is where they come from!
 
 ## Pendulums
 
@@ -137,7 +137,7 @@ $$\sin \theta =\frac{e^{i\theta }-e^{-i\theta }}{2}$$
 
 Suppose we have a complex number $z = x + iy$. Using Euler's formula, we can write $z$ as:
 
-$$z = |z|e^{i\phi}=$$
+$$z = |z|e^{i\phi}$$
 
 With:
 $$|z| = \sqrt{x^2+y^2}$$
@@ -325,7 +325,10 @@ We have a differential equation with repeated roots as our solution. Therefore, 
 
 $$x\left(t\right)=Ae^{-\frac{\gamma t}{2}}+Bte^{-\frac{\gamma t}{2}}$$
 
-This comes from the rules for second order differential equations with repeated roots. 
+This comes from the rules for second order differential equations with repeated roots. We can solve for A and B with the following:
+
+$$A=x\left(0\right)$$
+$$B=v\left(0\right)+\omega _0x\left(0\right)$$
 
 Is your head spinning? Well, that's bad news, because we still have one section left.
 
@@ -408,7 +411,6 @@ $$x_0=\frac{F}{m\sqrt{\left(\omega _0^2-\omega ^2\right)+\left(\omega \gamma \ri
 This causes the graph to look something like this:
 
 ![alt text](images/image2.png)
-
 This massive spike is where resonance occurs. Think about a wineglass breaking when someone sings a loud note at the right pitch: that's an example of resonance. You are exerting a driving force on the oscillating glass, and when your frequency matches the resonant frequency, the glass shatters. 
 
 Well, that's all folks! See you next time.
