@@ -17,7 +17,7 @@ aliases:
 categories: ["Physics", "Science", "Old"]
 ---
 
-First of all, The Big Bang Theory should be called The Big Bang Model. Just like the Theory of Evolution should be called Evolution. The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.
+The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.
 
 This whole thing started with a singularity. The singularity is our whole universe, compressed into something smaller than a grain of sand. It’s even smaller than an atom. So for whatever reason, it implodes. Like, it goes **_KABOOM._** All the information of the universe balloons out at blinding speed. This is where things start to get kooky.
 
