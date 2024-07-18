@@ -7,7 +7,7 @@ params:
   profileMode:
     enabled: true
     title: "Rohan Arni"
-    subtitle: "Hi there! I’m a sophomore at High Technology High School. I’m a developer, musician, scientist, athlete and writer."
+    subtitle: "Hi there! I’m a junior at High Technology High School. I’m a developer, musician, scientist, athlete and writer."
     imageUrl: img/profile.png
     buttons:
       - name: Blog
