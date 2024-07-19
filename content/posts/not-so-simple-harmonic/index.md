@@ -240,7 +240,7 @@ In an over-damped oscillator, the system moves to equilibrium without oscillatin
 
 $$\frac{\gamma }{2}>\omega _0$$
 
-Once again, we make our "anzatz":
+Once again, we make our "ansatz":
 
 $$x=Ae^{\alpha t}$$
 
