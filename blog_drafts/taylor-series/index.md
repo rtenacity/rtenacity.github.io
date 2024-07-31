@@ -11,3 +11,4 @@ categories: ["Science", "Math"]
 
 ---
 
+$$\oint \vec{E}\cdot d\vec{A}=\frac{q}{\varepsilon _0}$$
