@@ -1,5 +1,5 @@
 ---
-title: "The Taylor Series and Euler's Identity"
+title: "Intution to Gauss's Law"
 author: "Rohan Arni"
 date: 2024-07-31T09:10:42-05:00
 draft: false
