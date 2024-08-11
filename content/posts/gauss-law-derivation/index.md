@@ -224,10 +224,6 @@ This is Gauss's Law! We can keep going however. What happens when we have two ch
 
 $$\oint_S \vec{E}_1\cdot d\vec{A}+\oint_S \vec{E}_2\cdot d\vec{A}=\frac{q_1}{\varepsilon _0}+\frac{q_2}{\varepsilon _0}$$
 
-We can write this for any $n$ number of charges:
-
-$$\oint _s\ \vec{E}\cdot d\vec{A}=\sum _{i=1}^n\frac{q_{i}}{\varepsilon _0}$$
-
 Suppose we have a continuous blob of charge with charge density ρ. We can rewrite the above equation as
 
 $$\oint _s\ \vec{E}\cdot d\vec{A}=\iiint_V \rho(x, y, z)dxdydz$$
