@@ -29,7 +29,7 @@ Here's a diagram of the dialectic:
 Hegel used the example of the French Revolution to explain his idea. The French Monarchy was the thesis, the current world order. The drastic opposite of the French Monarchy was the French Revolution, the antithesis. The synthesis was the new world order that was formed after the French Revolution, which was the French Republic.
 
 ![2](images/dialectic2.excalidraw.png)
-
+<!--
 Using the dialectic, we can visualize the modern day as just a series of Hegelian dialectics. I think the best example of this is the current state of affairs in Israel. This involves two applications of the dialectic at a broad level:
 
 Origins:
@@ -63,6 +63,6 @@ Current state:
 
 At the current state, there is no synthesis. However, the Hegelian synthesis can take decades to come to fruition, as seen with the French Revolution. 
 
-The Israel-Palestine conflict is just one example, but nearly every single current social or political issue can be visualized through the Hegelian dialectic. 
+The Israel-Palestine conflict is just one example, but nearly every single current social or political issue can be visualized through the Hegelian dialectic.  -->
 
 *Expect more philosophy to come. - RA*
