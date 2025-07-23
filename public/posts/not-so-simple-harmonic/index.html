@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir=" auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Simple Harmonic Motion Isn&#39;t Very Simple | rohanarni.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="Intro
+This article is going to be math heavy. Be warned.
+According to Google, an oscillator is a mechanical or electronic device that works on the principles of oscillation: a periodic fluctuation between two things based on changes in energy.
+If you take a system in equilibrium and give it a little kick, it will vibrate. We can model this with a cosine function:
+$$x = A \cos (\omega_0 t &#43; \phi)$$">
+<meta name="author" content="Rohan Arni">
+<link rel="canonical" href="http://localhost:1313/posts/not-so-simple-harmonic/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1cf6fbdbc3148f9ba6f6431621c28cfe4a5c7dff305cc1132deab8fbbd12ea54.css" integrity="sha256-HPb728MUj5um9kMWIcKM/kpcff8wXMETLeq4&#43;70S6lQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/not-so-simple-harmonic/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="
+    top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">rohanarni.com</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                        <ul class="lang-switch"><li>|</li>
+                        </ul>
+                    </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/newsletter/" title="Newsletter">
+                    <span>Newsletter</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+    <header class="top" class="post-header">
+        
+        <h1 class="post-title">
+            Simple Harmonic Motion Isn&#39;t Very Simple
+        </h1>
+        <div class="post-meta"><span title='2024-07-17 09:10:42 -0500 -0500'>July 17, 2024</span>&nbsp;·&nbsp;Rohan Arni
+
+</div>
+    </header> 
+    <div class="post-content"><h2 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h2>
+<p>This article is going to be math heavy. Be warned.</p>
+<p>According to Google, an oscillator is a mechanical or electronic device that works on the principles of oscillation: a periodic fluctuation between two things based on changes in energy.</p>
+<p>If you take a system in equilibrium and give it a little kick, it will vibrate. We can model this with a cosine function:</p>
+<p>$$x = A \cos (\omega_0 t + \phi)$$</p>
+<p>This equation relates the position of the oscillator to the amplitude ($A$), the angular frequency ($\omega$), time ($t$), and the phase shift $\phi$. What are all of these things? The amplitude is defined as the maximum displacement. The angular frequency is a fixed constant of the system. You can think of the phase shift as the offset of the system. We can ignore this term, as it won&rsquo;t affect these calculations. We can take the derivative of this function with the chain rule to find the velocity function:</p>
+<p>$$\frac{dx}{dt} = v = - A \omega_0 \sin (\omega_0 t + \phi)$$</p>
+<p>We can take the second derivative to find the acceleration function:</p>
+<p>$$\frac{d^2x}{dt}= a= - A {\omega_0^2} \cos (\omega_0 t + \phi)$$</p>
+<p>Something in this function looks familiar. That&rsquo;s right! The acceleration function contains the position function (look at the cosine function):</p>
+<p>$$-{\omega_0^2} \cdot  A  \cos (\omega_0 t + \phi) = -{\omega_0^2}x$$</p>
+<p>So, to put everything together:</p>
+<p>$$\frac{d^2x}{dt}= -{\omega_0^2}x$$</p>
+<p>This is the equation for simple harmonic motion.</p>
+<h2 id="springs-1">Springs 1<a hidden class="anchor" aria-hidden="true" href="#springs-1">#</a></h2>
+<p>Take a mass on a spring:</p>
+<p><img alt="image" loading="lazy" src="/posts/not-so-simple-harmonic/images/graph1.excalidraw.png#layoutTextWidth"></p>
+<p>If you pull it, it will try to return to equilibrium. We can use Newton&rsquo;s Second Law along with Hooke&rsquo;s Law to give us:</p>
+<p>$$ F = ma = -kx$$</p>
+<p>We can rewrite this as:</p>
+<p>$$ m\frac{d^2x}{dt^2} = -kx$$</p>
+<p>Wait a minute, another differential equation for the second derivative of x! Let&rsquo;s see if we can equate the two to find the angular frequency for a spring. Divide both sides by m:</p>
+<p>$$ \frac{d^2x}{dt^2} = -\frac{k}{m}x$$</p>
+<p>And when we equate them:</p>
+<p>$$-\frac{k}{m}x =  -{\omega_0^2}x$$</p>
+<p>We find that $\omega_0^2 = \frac{k}{m}$, and as a result:</p>
+<p>$$\omega_0 = \sqrt{\frac{k}{m}}$$</p>
+<p>This is great! We have the angular frequency for a spring. We also know that this is a fixed number based on the properties of the spring itself. From these relationships for frequency ($f$) and period ($T$):</p>
+<p>$$f = \frac{\omega}{2\pi}$$
+$$T = \frac {2 \pi}{\omega}$$</p>
+<p>We can get these equations:</p>
+<p>$$\omega_0 = \sqrt{\frac{k}{m}}$$
+$$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$$
+$$T = 2 \pi \sqrt{\frac{m}{k}}$$</p>
+<p>Now, anyone who&rsquo;s taken an introductory physics course should vaguely recognize these equations for angular frequency, frequency, and period    . So this is where they come from!</p>
+<h2 id="pendulums">Pendulums<a hidden class="anchor" aria-hidden="true" href="#pendulums">#</a></h2>
+<p>Imagine a massless rod of length $L$ that supports a mass $m$ at the end.</p>
+<p><img alt="image" loading="lazy" src="/posts/not-so-simple-harmonic/images/graph2.excalidraw.png#layoutTextWidth"></p>
+<p>Instead of the mass moving in one dimesion, it moves in a circle. We could try to find some relationship in two dimensions for the motion of a circle, but we can do something much easier. Instead of tracking $x$ and $y$, we can track $\theta$, the angle that the mass has moved to. We can rewrite our simple harmonic equation as:</p>
+<p>$$\frac{d^2\theta}{dt^2} = -\omega_0^2\theta$$</p>
+<p>Okay, so if we&rsquo;re dealing with angles, it&rsquo;s easier to work with torque. We can define torque as:</p>
+<p>$$\tau = I\frac{d^2\theta}{dt^2} = r \times F$$</p>
+<p>Where $\tau$ represents torque, $I$ represents moment of inertia, $r$ represents the radius, and $F$ represents the force exerted on the mass. In this scenario, our moment of inertia is
+$$I = mL^2$$</p>
+<p>due to the mass being treated as a point mass. For our second definition of torque, we can use:</p>
+<p>$$r \times F = rF \sin \theta $$</p>
+<p>But what is the &ldquo;restoring&rdquo; force acting on the pendulum? Well, in this case, we only have gravity acting on the pendulum, so that must be our restoring force. Therefore, we get:</p>
+<p>$$(mL^2) \frac{d^2\theta}{dt^2} = mgL \sin \theta$$</p>
+<p>Solving for the second derivative of theta:
+$$ \frac{d^2\theta}{dt^2} = \frac{g}{L} \sin \theta$$</p>
+<p>So, we have a bit of a problem. Right now, we can&rsquo;t solve this equation with our SHM equation, because we need to isolate theta. Thankfully, due to the Taylor series of sine:</p>
+<p>$$\sin \theta = \sum_{n=1}^{\infty} \frac{(-1)^n}{(2n+1)!}\theta^{2n+1}$$</p>
+<p>We know that for small values of theta, $\sin \theta = \theta$! Therefore, we can rewrite the equation as:</p>
+<p>$$ \frac{d^2\theta}{dt^2} = \frac{g}{L}\theta$$</p>
+<p>This is called the small-angle approximation. From this, we get:</p>
+<p>$$\omega_0 = \sqrt{\frac{g}{L}}$$
+$$f = \frac{1}{2\pi} \sqrt{\frac{g}{L}}$$
+$$T = {2\pi} \sqrt{\frac{L}{g}}$$</p>
+<p>Surprisingly, we see that the period of a pendulum is not dependent on the mass of the pendulum! This is a very useful result.</p>
+<h2 id="a-math-detour">A Math Detour<a hidden class="anchor" aria-hidden="true" href="#a-math-detour">#</a></h2>
+<p>Using the Taylor Series of $e$, $\sin$, and $\cos$, we get Euler&rsquo;s Formula:
+$$e^{i\theta }=\cos \theta +i\sin \theta $$
+$$e^{-i\theta }=\cos \theta -i\sin \theta$$</p>
+<p>Using Euler&rsquo;s formula, we can reconstruct the trigonmetric functions:
+$$\cos \theta =\frac{e^{i\theta }+e^{-i\theta }}{2}$$
+$$\sin \theta =\frac{e^{i\theta }-e^{-i\theta }}{2}$$</p>
+<p>Suppose we have a complex number $z = x + iy$. Using Euler&rsquo;s formula, we can write $z$ as:</p>
+<p>$$z = |z|e^{i\phi}$$</p>
+<p>With:
+$$|z| = \sqrt{x^2+y^2}$$
+$$\tan \phi = \frac{y}{x}$$</p>
+<p>This is called the polar form of a complex number.</p>
+<h2 id="springs-2-electric-boogaloo">Springs 2: Electric Boogaloo<a hidden class="anchor" aria-hidden="true" href="#springs-2-electric-boogaloo">#</a></h2>
+<p>Let&rsquo;s write down our simple harmonic equation:
+$$\frac{d^2x}{dt^2}=-\omega _0^2x$$</p>
+<p>We&rsquo;re going to attempt to write a general solution for this. This will seem unecessary at first, but as things become increasingly complicated, the ability to understand this is extremely useful.</p>
+<p>We can move everything to one side and write:</p>
+<p>$$\frac{d^2x}{dt^2}+\omega _0^2x=0$$</p>
+<p>Now, looking at the equation, the 2nd derivative of the function (x) must be a version of itself. We know two functions that could match this description: $e^x$ or one of the trignometric equations. Let&rsquo;s go with $e^x$ as our &ldquo;ansatz&rdquo; ( educated guess in German):
+$$x=Ae^{\alpha t}$$</p>
+<p>This is our guess for what x could be. We can plug in our guess to the equation and differentiate to get:</p>
+<p>$$\alpha ^2Ae^{\alpha t}+\omega _0^2Ae^{\alpha t}=0$$</p>
+<p>Factoring:</p>
+<p>$$A\left(\alpha ^2+\omega _0^2\right)e^{\alpha t}=0$$</p>
+<p>Now, we could make this equation satisfy 0 by setting $A$ equal to 0 or $t$ equal to 0. These are trivial solutions. To find a general solution, we must solve:</p>
+<p>$$\alpha ^2+\omega _0^2=0$$</p>
+<p>This is pretty straightforward, and we get:</p>
+<p>$$\alpha =\sqrt{-\omega _0^2}=\pm i\omega _0$$</p>
+<p>Wait a minute. Does this mean that we have two solutions? That doesn&rsquo;t seem right. But it is. Let&rsquo;s write our two solutions down:</p>
+<p>$$x_1\left(t\right)=Ae^{i\omega_0 t}$$
+$$x_2\left(t\right)=Be^{-i\omega_0 t}$$</p>
+<p>Because the original differential equation did not depend on higher powers of x (only the derivatives of x), we call this a linear differential equation. Linear differential equations obey the principle of superposition, which states:</p>
+<blockquote>
+<p>If $y_1(t)$ and $y_2(t)$ are two solutions to a linear differential equation then so is $$y(t) = c_1y_1(t) + c_2y_2(t)$$</p></blockquote>
+<p>If that doesn&rsquo;t make any sense, it means that the sum of both solutions is a general solution. You can also multiply either sum by a different coefficient.
+From this principle, we can write:
+$$x\left(t\right)=Ae^{i\omega _0t}+Be^{-i\omega _0t}$$</p>
+<p>But we have imaginary units! To verify that this equation is real, we can check if it is its own complex conjugate:</p>
+<p>$$x^{\ast }\left(t\right)=A^{\ast }e^{-i\omega _0t}+B^{\ast }e^{i\omega _0t}$$</p>
+<p>If we want $x^{\ast }\left(t\right)$ to equal $x\left(t\right)$, we must demand that:</p>
+<p>$$B=A^{\ast }$$
+$$A=B^{\ast }$$</p>
+<p>We can use the first condition and substitute:
+$$x\left(t\right)=Ae^{-i\omega_0 t}+A^{\ast }e^{-i\omega_0 t}$$</p>
+<p>But we still aren&rsquo;t done! A doesn&rsquo;t have to be real, it can be a complex number. To ensure that A is represented as a real number, we can use the definition:</p>
+<p>$$A=\left|A\right|e^{i\phi }$$</p>
+<p>Substituting that in, we get:</p>
+<p>$$x\left(t\right)=\left|A\right|e^{i\left(\omega_0 t+\phi \right)}+\left|A\right|e^{-i\left(\omega_0 t+\phi \right)}$$</p>
+<p>This looks really familiar! Using Euler&rsquo;s formula, we get:</p>
+<p>$$x\left(t\right)=2\left|A\right|\cos \left(\omega_0 t+\phi \right)=C\cos \left(\omega_0 t+\phi \right)$$</p>
+<p>Which is our original equation. Great! We now know a somewhat general method for solving this differential equation.</p>
+<h2 id="damping">Damping<a hidden class="anchor" aria-hidden="true" href="#damping">#</a></h2>
+<p>Let&rsquo;s kick things up a notch. For our mass and spring system, we now have a frictional force acting the other way. We then take our SHM equation and add a new term to represent this &ldquo;damping&rdquo;:</p>
+<p>$$m\frac{d^2x}{dt^2}=-kx-b\frac{dx}{dt}$$</p>
+<p>Bringing everything to one side:</p>
+<p>$$m\frac{d^2x}{dt}+b\frac{dx}{dt}+kx=0$$</p>
+<p>The b represents a damping constant. Now, this looks like a giant pain to solve. Let&rsquo;s make some quick adjustments by dividing everything by m:</p>
+<p>$$\frac{d^2x}{dt}+\gamma \frac{dx}{dt}+\omega _0^2x=0$$</p>
+<p>Where $\gamma$ = $\frac{b}{m}$.</p>
+<p>There are three types of damping, shown in the graph below.</p>
+<p><img alt="alt text" loading="lazy" src="/posts/not-so-simple-harmonic/images/image.png"></p>
+<h3 id="over-damped-oscillator">Over-damped Oscillator<a hidden class="anchor" aria-hidden="true" href="#over-damped-oscillator">#</a></h3>
+<p>In an over-damped oscillator, the system moves to equilibrium without oscillating back and forth. In this case,</p>
+<p>$$\frac{\gamma }{2}&gt;\omega _0$$</p>
+<p>Once again, we make our &ldquo;ansatz&rdquo;:</p>
+<p>$$x=Ae^{\alpha t}$$</p>
+<p>Substituting, differentiating, and expanding, we get:</p>
+<p>$$A\left(\alpha ^2+\alpha \gamma +\omega _0^2\right)e^{\alpha t}=0$$</p>
+<p>To generate non-trivial solutions, we must set the details inside the brackets equal to zero:</p>
+<p>$$\alpha ^2+\alpha \gamma +\omega _0^2=0$$</p>
+<p>Using the quadratic equation to solve, we get:</p>
+<p>$$\alpha = - \frac{\gamma }{2}\pm \sqrt{\left(\frac{\gamma }{2}\right)^2-\omega _0^2}$$</p>
+<p>Now, we know that anything inside the square root will never be negative due to the condition placed on our damping constant. We also know it is not big enough to create a positive number. Therefore, $\alpha$ will always be negative.</p>
+<p>Writing out our solution, we get:</p>
+<p>$$x\left(t\right)=Ae^{\alpha _+t}+Be^{\alpha _-t}$$</p>
+<p>As expected, there is no way we can use Euler&rsquo;s formula to generate sines and cosines, because the system is not oscillating back and forth. Instead, the system is represent by a decreasing exponential (as $\alpha$ is always negative).</p>
+<p>To solve for A and B in this case, we can set up a system of equations, given we know the following:</p>
+<p>$$x\left(0\right)=A+B$$
+$$v\left(0\right)=\alpha _+A+\alpha _-B$$</p>
+<h3 id="under-damped-oscillator">Under-damped Oscillator<a hidden class="anchor" aria-hidden="true" href="#under-damped-oscillator">#</a></h3>
+<p>In an under-damped oscillator, the system will oscillate, but the amplitute will slowly decrease from its maximum amplitude.</p>
+<p>We can assume:
+$$\frac{\gamma}{2} &lt; \omega_0$$</p>
+<p>And using our general solution from the over-damped solution, we once again get:</p>
+<p>$$\alpha = - \frac{\gamma }{2}\pm \sqrt{\left(\frac{\gamma }{2}\right)^2-\omega _0^2}$$</p>
+<p>However, because $\frac{\gamma}{2} &lt; \omega_0$, whatever is inside the exponent will be negative. We can explicitly rewrite this as:</p>
+<p>$$\alpha =-\frac{\gamma }{2}\pm i\sqrt{\omega _0^2-\left(\frac{\gamma }{2}\right)^2}$$</p>
+<p>For easier notation, we can write:</p>
+<p>$$\omega &lsquo;=\sqrt{\ \omega _0^2-\left(\frac{\gamma }{2}\right)^2}$$</p>
+<p>$$ \alpha = -\frac{\gamma }{2}\pm i \omega&rsquo;$$</p>
+<p>Therefore, our solution is:</p>
+<p>$$x\left(t\right)=Ae^{-\left(\frac{\gamma t}{2}+i\omega &rsquo;t\right)}+Be^{-\left(\frac{\gamma t}{2}-i\omega &rsquo;t\right)}$$</p>
+<p>We can see that A and B are complex conjugates of each other. Therefore,</p>
+<p>$$A = |A|e^{i\phi_0}$$
+$$B = |A|e^{-i\phi_0}$$</p>
+<p>Substituting this definition and simplifiying, we get:
+$$x\left(t\right)=\left|A\right|e^{-\frac{\gamma }{2}}\left(e^{i\left(\omega &rsquo;t+\phi _0\right)}+e^{-i\left(\omega &rsquo;t+\phi _0\right)}\right)$$</p>
+<p>And by using Euler&rsquo;s formula:</p>
+<p>$$x\left(t\right)=Ce^{-\frac{\gamma t}{2}}\cos \left(\omega &rsquo;t+\phi _0\right)$$</p>
+<p>This matches our expectations, as the graph of an under-damped oscillator almost looks like a squeezed cosine function, similar to what we would expect from this equation here.</p>
+<h3 id="critically-damped-oscillator">Critically Damped Oscillator<a hidden class="anchor" aria-hidden="true" href="#critically-damped-oscillator">#</a></h3>
+<p>In an over-damped oscillator, the system moves to equilibrium without oscillating back and forth in the shortest time possible. It&rsquo;s the middle case between an under-damped and over-damped oscillator. In this case,</p>
+<p>$$\frac{\gamma }{2}=\omega _0$$</p>
+<p>We can use our standard solutions for $\alpha$ here:</p>
+<p>$$\alpha = - \frac{\gamma }{2}\pm \sqrt{\left(\frac{\gamma }{2}\right)^2-\omega _0^2}$$</p>
+<p>But notice that everything in the square root vanishes, as both terms are equal! Therefore, our solutions for $\alpha$ are:</p>
+<p>$$\alpha = - \frac{\gamma }{2}\pm 0$$</p>
+<p>We have a differential equation with repeated roots as our solution. Therefore, our solution becomes</p>
+<p>$$x\left(t\right)=Ae^{-\frac{\gamma t}{2}}+Bte^{-\frac{\gamma t}{2}}$$</p>
+<p>This comes from the rules for second order differential equations with repeated roots. We can solve for A and B with the following:</p>
+<p>$$A=x\left(0\right)$$
+$$B=v\left(0\right)+\omega _0x\left(0\right)$$</p>
+<p>Is your head spinning? Well, that&rsquo;s bad news, because we still have one section left.</p>
+<h3 id="driven-oscillators">Driven Oscillators<a hidden class="anchor" aria-hidden="true" href="#driven-oscillators">#</a></h3>
+<p>Take our mass-spring system, including friction. Let&rsquo;s assume this is an under-damped system. We now introduce a cyclic force:</p>
+<p>$$F_0\cos \omega t$$</p>
+<p>Now, our equation looks like:</p>
+<p>$$\frac{d^2x}{dt}+\gamma \frac{dx}{dt}+\omega _0^2x=\left(\frac{F}{m}\right)\cos \omega t$$</p>
+<p>The force is divided by mass because we did this in a previous step (see how we created the gamma term). This is a really annoying equation to solve for. We can instead use a hack to create an equation in terms of $e$. Let&rsquo;s make another equation, this time in terms of $y$:</p>
+<p>$$ \frac{d^2y}{dt}+\gamma \frac{dy}{dt}+\omega _0^2y=\left(\frac{F}{m}\right)\sin \omega t$$</p>
+<p>And multiply across by $i$:</p>
+<p>$$i\frac{d^2y}{dt}+i\gamma \frac{dy}{dt}+i\omega _0^2y=\left(\frac{F}{m}\right)i\sin \omega t$$</p>
+<p>Now, I&rsquo;m sure some of you can see where I&rsquo;m going with this. Going back to the definition of complex numbers:</p>
+<p>$$z=x+iy$$</p>
+<p>We can manufacture a new equation that uses this:</p>
+<p>$$\frac{d^2z}{dt}+\gamma \frac{dz}{dt}+\omega _0^2z=\left(\frac{F}{m}\right)e^{i\omega t}$$</p>
+<p>We can solve this equation, and them dump the imaginary part. Let&rsquo;s make our preliminary guess, which looks a bit different now:</p>
+<p>$$z=z_0e^{i\omega t}$$</p>
+<p>Substituting, we get:
+$$-\omega ^2z_0e^{i\omega t}+i\omega \gamma z_0e^{i\omega t}+\omega ^2z_0e^{i\omega t}=\frac{F_0}{m}e^{i\omega t}$$
+$$\left(-\omega ^2+i\omega \gamma +\omega _0^2\right)z_0e^{i\omega t}=\frac{F}{m}e^{i\omega t}$$
+$$\left(-\omega ^2+i\omega \gamma +\omega _0^2\right)z_0=\frac{F}{m}$$
+$$z_0=\frac{\frac{F}{m}}{-\omega ^2+i\omega \gamma +\omega _0^2}$$</p>
+<p>Great! We have a solution (although a big large) for $z_0$. Let&rsquo;s clean this up first by defining impedence ($I$):</p>
+<p>$$I=-\omega ^2+i\omega \gamma +\omega _0^2$$</p>
+<p>And then we can use all of this for $z$:</p>
+<p>$$z=z_0e^{iwt}=\frac{\frac{F}{m}\cdot e^{i\omega t}}{I}$$</p>
+<p>However, it is visible that $I$ is a complex number. To ensure only real numbers remain, we can use the polar form of complex numbers:</p>
+<p>$$z=\frac{\frac{F_0}{m}\cdot e^{i\omega t}}{\left|I\right|e^{i\phi }}$$
+$$z=\frac{\frac{F_0}{m}}{\left|I\right|}e^{i\left(\omega t-\phi \right)}$$</p>
+<p>This is exactly what we need. We can extract the real part and get:</p>
+<p>$$x=\frac{F_0}{m\left|I\right|}\cos \left(\omega t-\phi \right)$$</p>
+<p>We&rsquo;re almost there! We need to include the transient solution (movement before the damping decays) alongside the steady-state solution (the driven part) Knowing, for an under-damped system:</p>
+<p>$$x_c\left(t\right)=Ce^{-\frac{\gamma t}{2}}\cos \left(\omega &rsquo;t+\phi _0\right)$$</p>
+<p>We get the complete solution:
+$$x\left(t\right)=\frac{F_0}{m\left|I\right|}\cos \left(\omega t-\phi \right)+Ce^{-\frac{\gamma t}{2}}\cos \left(\omega &rsquo;t+\phi _0\right)$$</p>
+<p>Where:</p>
+<p>$$\omega &lsquo;=\sqrt{\ \omega _0^2-\left(\frac{\gamma }{2}\right)^2}$$
+$$\left|I\right|=\sqrt{\left(\omega _0^2-\omega ^2\right)^2+\left(\omega \gamma \right)^2}$$
+$$\tan \phi =\frac{\omega \gamma }{\omega _0^2-\omega ^2}$$</p>
+<p>This is a LOT. Congrats if you made it this far (send me a message if you did!)</p>
+<p>One last thing to cover: the natural frequency and resonance.</p>
+<p>The natural frequency is the frequency at which a system would oscillate if there were no driving and no damping force. Resonant frequency is the natural frequency at which an object vibrates with a higher amplitude, or when a system is driven at its natural frequency.</p>
+<p>The resonant frequency is based on the maximum amplitude as $\omega$ increases:</p>
+<p>$$x_0=\frac{F}{m\sqrt{\left(\omega _0^2-\omega ^2\right)+\left(\omega \gamma \right)^2}}$$</p>
+<p>This causes the graph to look something like this:</p>
+<p><img alt="alt text" loading="lazy" src="/posts/not-so-simple-harmonic/images/image2.png">
+This massive spike is where resonance occurs. Think about a wineglass breaking when someone sings a loud note at the right pitch: that&rsquo;s an example of resonance. You are exerting a driving force on the oscillating glass, and when your frequency matches the resonant frequency, the glass shatters.</p>
+<p>Well, that&rsquo;s all folks! See you next time.</p>
+
+
+    </div>
+
+    <center> <script async src="https://eocampaign1.com/form/1559edaa-677c-11f0-bbd4-eb13bbfcc584.js" data-form="1559edaa-677c-11f0-bbd4-eb13bbfcc584"></script></center>
+
+
+    <footer class="post-footer" class="bottom">
+        <ul class="post-tags">
+        </ul>
+    </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">rohanarni.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>

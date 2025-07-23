@@ -2,30 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>EV3 on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/ev3/</link>
+    <link>http://localhost:1313/categories/ev3/</link>
     <description>Recent content in EV3 on rohanarni.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Mar 2022 01:41:07 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/ev3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 17:49:20 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/ev3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ev3 Projects: Car Following</title>
-      <link>https://rohanarni.com/posts/ev3carfollow/</link>
+      <link>http://localhost:1313/posts/ev3carfollow/</link>
       <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/ev3carfollow/</guid>
-      <description>This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
-The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350.</description>
+      <guid>http://localhost:1313/posts/ev3carfollow/</guid>
+      <description>&lt;p&gt;This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.&lt;/p&gt;
+&lt;p&gt;The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out &lt;a href=&#34;https://github.com/rtenacity/LineFollower&#34;&gt;here&lt;/a&gt;) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>First Lego League</title>
-      <link>https://rohanarni.com/posts/first-lego-league/fll/</link>
+      <link>http://localhost:1313/posts/first-lego-league/fll/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/first-lego-league/fll/</guid>
-      <description>The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
-Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions.</description>
+      <guid>http://localhost:1313/posts/first-lego-league/fll/</guid>
+      <description>&lt;p&gt;The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.&lt;/p&gt;
+&lt;p&gt;Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions. This is what the mat looked like:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

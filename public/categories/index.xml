@@ -2,190 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on rohanarni.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jul 2024 09:10:42 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>History</title>
-      <link>https://rohanarni.com/categories/history/</link>
-      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/history/</guid>
+      <title>Math</title>
+      <link>http://localhost:1313/categories/math/</link>
+      <pubDate>Wed, 31 Jul 2024 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/categories/math/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>Philosophy</title>
-      <link>https://rohanarni.com/categories/philosophy/</link>
-      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Politics</title>
-      <link>https://rohanarni.com/categories/politics/</link>
-      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Art</title>
-      <link>https://rohanarni.com/categories/art/</link>
-      <pubDate>Mon, 30 Jan 2023 09:10:42 -0500</pubDate>
-      
-      <guid>https://rohanarni.com/categories/art/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Law</title>
-      <link>https://rohanarni.com/categories/law/</link>
-      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/law/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Old</title>
-      <link>https://rohanarni.com/categories/old/</link>
-      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/old/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EV3</title>
-      <link>https://rohanarni.com/categories/ev3/</link>
-      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/ev3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ev3dev</title>
-      <link>https://rohanarni.com/categories/ev3dev/</link>
-      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/ev3dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robotics</title>
-      <link>https://rohanarni.com/categories/robotics/</link>
-      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/robotics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reviews</title>
-      <link>https://rohanarni.com/categories/reviews/</link>
-      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/reviews/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://rohanarni.com/categories/tech/</link>
-      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chemistry</title>
-      <link>https://rohanarni.com/categories/chemistry/</link>
-      <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/chemistry/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Physics</title>
-      <link>https://rohanarni.com/categories/physics/</link>
-      <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/physics/</guid>
-      <description></description>
-    </item>
-    
     <item>
       <title>Science</title>
-      <link>https://rohanarni.com/categories/science/</link>
-      <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/science/</guid>
+      <link>http://localhost:1313/categories/science/</link>
+      <pubDate>Wed, 31 Jul 2024 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/categories/science/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Physics</title>
+      <link>http://localhost:1313/categories/physics/</link>
+      <pubDate>Wed, 17 Jul 2024 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/categories/physics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>http://localhost:1313/categories/history/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy</title>
+      <link>http://localhost:1313/categories/philosophy/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Politics</title>
+      <link>http://localhost:1313/categories/politics/</link>
+      <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/politics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Art</title>
+      <link>http://localhost:1313/categories/art/</link>
+      <pubDate>Mon, 30 Jan 2023 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/categories/art/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Law</title>
+      <link>http://localhost:1313/categories/law/</link>
+      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
+      <guid>http://localhost:1313/categories/law/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Old</title>
+      <link>http://localhost:1313/categories/old/</link>
+      <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
+      <guid>http://localhost:1313/categories/old/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>EV3</title>
+      <link>http://localhost:1313/categories/ev3/</link>
+      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ev3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ev3dev</title>
+      <link>http://localhost:1313/categories/ev3dev/</link>
+      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
+      <guid>http://localhost:1313/categories/ev3dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robotics</title>
+      <link>http://localhost:1313/categories/robotics/</link>
+      <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
+      <guid>http://localhost:1313/categories/robotics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reviews</title>
+      <link>http://localhost:1313/categories/reviews/</link>
+      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
+      <guid>http://localhost:1313/categories/reviews/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tech</title>
+      <link>http://localhost:1313/categories/tech/</link>
+      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
+      <guid>http://localhost:1313/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chemistry</title>
+      <link>http://localhost:1313/categories/chemistry/</link>
+      <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
+      <guid>http://localhost:1313/categories/chemistry/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Books</title>
-      <link>https://rohanarni.com/categories/books/</link>
+      <link>http://localhost:1313/categories/books/</link>
       <pubDate>Sat, 17 Apr 2021 22:16:25 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/books/</guid>
+      <guid>http://localhost:1313/categories/books/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Literature</title>
-      <link>https://rohanarni.com/categories/literature/</link>
+      <link>http://localhost:1313/categories/literature/</link>
       <pubDate>Sat, 17 Apr 2021 22:16:25 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/literature/</guid>
+      <guid>http://localhost:1313/categories/literature/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Reading</title>
-      <link>https://rohanarni.com/categories/reading/</link>
+      <link>http://localhost:1313/categories/reading/</link>
       <pubDate>Sat, 17 Apr 2021 22:16:25 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/reading/</guid>
+      <guid>http://localhost:1313/categories/reading/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Minecraft</title>
-      <link>https://rohanarni.com/categories/minecraft/</link>
+      <link>http://localhost:1313/categories/minecraft/</link>
       <pubDate>Sun, 21 Mar 2021 23:28:57 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/minecraft/</guid>
+      <guid>http://localhost:1313/categories/minecraft/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Video Games</title>
-      <link>https://rohanarni.com/categories/video-games/</link>
+      <link>http://localhost:1313/categories/video-games/</link>
       <pubDate>Sun, 21 Mar 2021 23:28:57 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/video-games/</guid>
+      <guid>http://localhost:1313/categories/video-games/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Chess</title>
-      <link>https://rohanarni.com/categories/chess/</link>
+      <link>http://localhost:1313/categories/chess/</link>
       <pubDate>Sun, 07 Mar 2021 14:30:06 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/categories/chess/</guid>
+      <guid>http://localhost:1313/categories/chess/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

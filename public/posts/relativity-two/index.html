@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir=" auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Relativity 2: Enter Einstein | rohanarni.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="Note to reader: if you have not read part one, do so here.
+So, what was wrong with Galilean relativity? It help up perfectly well, until a Scottish mathematician by the names of James Clerk Maxwell created his four namesake laws of electricity and magnetism. As a consequence of his laws, he was able to derive the speed of light in a vacuum, which was given the variable $c$.
+Now, according to Galilean relativity, the speed of light seen by a moving observer should be the speed of light minus the moving observer:">
+<meta name="author" content="Rohan Arni">
+<link rel="canonical" href="http://localhost:1313/posts/relativity-two/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1cf6fbdbc3148f9ba6f6431621c28cfe4a5c7dff305cc1132deab8fbbd12ea54.css" integrity="sha256-HPb728MUj5um9kMWIcKM/kpcff8wXMETLeq4&#43;70S6lQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/relativity-two/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="
+    top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">rohanarni.com</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                        <ul class="lang-switch"><li>|</li>
+                        </ul>
+                    </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/newsletter/" title="Newsletter">
+                    <span>Newsletter</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+    <header class="top" class="post-header">
+        
+        <h1 class="post-title">
+            Relativity 2: Enter Einstein
+        </h1>
+        <div class="post-meta"><span title='2024-07-16 09:10:42 -0500 -0500'>July 16, 2024</span>&nbsp;·&nbsp;Rohan Arni
+
+</div>
+    </header> 
+    <div class="post-content"><p><em>Note to reader: if you have not read part one, do so <a href="https://rohanarni.com/posts/relativity-one">here</a>.</em></p>
+<p>So, what was wrong with Galilean relativity? It help up perfectly well, until a Scottish mathematician by the names of James Clerk Maxwell created his four namesake laws of electricity and magnetism. As a consequence of his laws, he was able to derive the speed of light in a vacuum, which was given the variable $c$.</p>
+<p>Now, according to Galilean relativity, the speed of light seen by a moving observer should be the speed of light minus the moving observer:</p>
+<p>$$ v = c - u $$</p>
+<p>We can rewrite that principle and say that if light is emitted from a moving source, its speed should be $c$ plus the speed of the source relative to the observer:</p>
+<p>$$ v = c + w$$</p>
+<p>Where $v$ is the velocity of light seen by the observer and $w$ is the velocity of the moving source. Unfortunately, this is not what happens. In 1887, Michelson and Morley ran their famous experiment searching for the &ldquo;ether&rdquo;, the mysterious medium that light was supposed to propagate through. They found, however, that there was no variation in the speed of light, which goes against Galilean relativity.</p>
+<p>This was a disaster! Scientific theories that had been held for hundreds of years were just disproven in an instant. Clearly, something needed to be done.</p>
+<p>This is what Einstein set out to do. In his 1905 paper &ldquo;On The Electrodynamics of Moving Bodies&rdquo;, he wrote down the two postulates of special relativity.</p>
+<ol>
+<li>All inertial observers are equivalent. All inertial observers are equally privileged to discover and observe natural phenomenon.</li>
+<li>The velocity of light is independent of the state of motion of the source or the observer.</li>
+</ol>
+<p>(A warning: the next section is a bit math heavy, but don&rsquo;t get scared! It&rsquo;s not terribly hard to follow along. If it doesn&rsquo;t make sense, skip it, as the big conclusions are at the end.)</p>
+<p>From these two postulates, we can begin to formulate special relativity.  We now know that times are no longer constant, so we get:</p>
+<p>$$ x&rsquo;=x-ut $$ $$
+x=x&rsquo;+ut&rsquo;$$</p>
+<p>Since the only constant between two observers is the speed of light, even lengths do not remain the same between observers. Therefore, we need to introduce some factor $\gamma$:</p>
+<p>$$x&rsquo;=\gamma \left(x-ut\right) $$ $$
+x=\gamma (x&rsquo;+ut&rsquo;)$$</p>
+<p>But what is this factor? Well, we must come up with a scenario first. Imagine, instead of a firecracker, a light-pulse traveling at a velocity $c$. I observe it at $(x, t)$, and you observe it at $(x&rsquo;, t&rsquo;)$. Therefore:
+$$ x = ct $$ $$ x&rsquo; = ct&rsquo;$$</p>
+<p>This is because we only agree on the speed of light. Now, armed with all 4 equations, we can derive our factor $\gamma$.</p>
+<ol>
+<li>
+<p>Start with our initial equations:
+$$
+x&rsquo; = \gamma(x-ut) $$ $$
+x= \gamma(x&rsquo;+ut&rsquo;)
+$$</p>
+</li>
+<li>
+<p>Multiply both equations together:
+$$ xx&rsquo;=\gamma ^2\left(xx&rsquo;+xut&rsquo;-x&rsquo;ut-u^2tt&rsquo;\right) $$</p>
+</li>
+<li>
+<p>Substitute for x and x':</p>
+</li>
+</ol>
+<p>$$ c^2tt&rsquo;=\gamma ^2\left(c^2tt&rsquo;\ +uctt&rsquo;-uctt&rsquo;-u^2tt&rsquo;\right)$$</p>
+<ol start="4">
+<li>Simplify:</li>
+</ol>
+<p>$$ c^2tt&rsquo;=\gamma ^2tt&rsquo;\left(c^2-u^2\right) $$ $$ c^2=\gamma ^2\left(c^2-u^2\right) $$</p>
+<ol start="5">
+<li>Solve in terms of $\gamma$:</li>
+</ol>
+<p>$$
+\gamma ^2=\frac{c^2}{c^2-u^2} $$
+$$ \gamma ^2=\frac{1}{1-\frac{u^2}{c^2}}$$
+$$\gamma =\frac{1}{\sqrt{1-\frac{u^2}{c^2}}} $$</p>
+<p>Bingo! That&rsquo;s our factor, which we call the Lorentz factor. Now, we can plug this in to our equations and get the Lorentz transformations:</p>
+<p>$$ x&rsquo;=\frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}} $$
+$$t&rsquo;=\frac{t-\frac{ux}{c^2}}{\sqrt{1-\frac{u^2}{c^2}}} $$</p>
+<p>So this is great, but what does all of this stuff even mean? Well, first of all, we can&rsquo;t take distance or time for granted anymore, as they can be different for different observers. Thankfully, we also find that if $u$ is not close to the speed of light, these equations just break down back into good old Galilean transformations. See below:</p>
+<p>$$ x&rsquo; = \frac{x-ut}{\sqrt{1-0}} \approx x-ut$$</p>
+<p>$$ t&rsquo; = \frac{t-\frac{0x}{c^2}}{\sqrt{1-0}} \approx t$$</p>
+<p>So this is good news! Our old ways of thinking hold up at small velocities.</p>
+<p>Regardless, $(x, t)$ and $(x&rsquo;, t&rsquo;)$ all cover the same space-time interval, a combination of distance and time. The space-time interval is invariant, meaning it does not change for all observers. As a result, the Lorentz transformations are invariant transformations, as they do not deform space-time.</p>
+<p>Does your head hurt yet? Mine sure did when I first read about all of this. Don&rsquo;t worry, it just gets weirder from here&hellip;</p>
+
+
+    </div>
+
+    <center> <script async src="https://eocampaign1.com/form/1559edaa-677c-11f0-bbd4-eb13bbfcc584.js" data-form="1559edaa-677c-11f0-bbd4-eb13bbfcc584"></script></center>
+
+
+    <footer class="post-footer" class="bottom">
+        <ul class="post-tags">
+        </ul>
+    </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">rohanarni.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>

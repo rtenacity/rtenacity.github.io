@@ -2,131 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Old on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/old/</link>
+    <link>http://localhost:1313/categories/old/</link>
     <description>Recent content in Old on rohanarni.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jun 2022 04:25:03 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/old/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 17:49:21 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/old/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marbury V. Madison: The First Supreme Court Case</title>
-      <link>https://rohanarni.com/posts/marbury-v-madison/</link>
+      <link>http://localhost:1313/posts/marbury-v-madison/</link>
       <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/marbury-v-madison/</guid>
-      <description>On February 24, 1803, the first and most influential supreme court case of America occurred. This case lives in obscurity to most citizens, but without it, the Supreme Court would not have the power it has today. The issue of the case arose from a seemingly simple dispute. It all began during the Election of 1800. When incumbent president John Adams was voted out of office, he created a scheme to keep his party, the Federalists, in control of one of the branches of the government.</description>
+      <guid>http://localhost:1313/posts/marbury-v-madison/</guid>
+      <description>&lt;p&gt;On February 24, 1803, the first and most influential supreme court case of America occurred. This case lives in obscurity to most citizens, but without it, the Supreme Court would not have the power it has today. The issue of the case arose from a seemingly simple dispute. It all began during the Election of 1800. When incumbent president John Adams was voted out of office, he created a scheme to keep his party, the Federalists, in control of one of the branches of the government. Adams promoted many Federalists to become circuit judges and justices of peace. This way, the Federalist party could control the Judicial Branch of the government. However, one man that was promised a commission, William Marbury, never received one before Jefferson came into office. Jefferson declared the commission void and told his Secretary of State, James Madison, to not deliver the commission. Marbury sued Madison, and the court case began. The Supreme Court case Marbury v. Madison changed America for the better because it established the principle of judicial review, increased the power of the Supreme Court, and protected the rights of citizens.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Ev3 Projects: Car Following</title>
-      <link>https://rohanarni.com/posts/ev3carfollow/</link>
+      <link>http://localhost:1313/posts/ev3carfollow/</link>
       <pubDate>Wed, 16 Mar 2022 01:41:07 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/ev3carfollow/</guid>
-      <description>This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
-The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350.</description>
+      <guid>http://localhost:1313/posts/ev3carfollow/</guid>
+      <description>&lt;p&gt;This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.&lt;/p&gt;
+&lt;p&gt;The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out &lt;a href=&#34;https://github.com/rtenacity/LineFollower&#34;&gt;here&lt;/a&gt;) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Tech Review #1: Blue Snowball</title>
-      <link>https://rohanarni.com/posts/tech-review-blue-snowball/</link>
+      <link>http://localhost:1313/posts/tech-review-blue-snowball/</link>
       <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/tech-review-blue-snowball/</guid>
-      <description>Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball! You may have heard of its older brother, the Blue Yeti, which is a professional-grade large microphone, but Blue, a Logitech brand, made another microphone, called the Blue Snowball.
-The Blue Snowball is half the price of the Yeti at 49.99, and is half the size. It sports a unique design, with a three-legged stand and a ball-shaped microphone.</description>
+      <guid>http://localhost:1313/posts/tech-review-blue-snowball/</guid>
+      <description>&lt;p&gt;Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball! You may have heard of its older brother, the Blue Yeti, which is a professional-grade large microphone, but Blue, a Logitech brand, made another microphone, called the Blue Snowball.&lt;/p&gt;
+&lt;p&gt;The Blue Snowball is half the price of the Yeti at 49.99, and is half the size. It sports a unique design, with a three-legged stand and a ball-shaped microphone.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Why China’s History Matters So Much</title>
-      <link>https://rohanarni.com/posts/why-china-history-matters/</link>
+      <link>http://localhost:1313/posts/why-china-history-matters/</link>
       <pubDate>Sun, 29 Aug 2021 22:50:58 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/why-china-history-matters/</guid>
-      <description>Hi. It’s been a while. Sorry for not writing at all! I’ve been pretty busy, but I didn’t write because I was very lazy. So anyways, I’m back! Let’s get into today’s topic!
-China. You can’t read the news without hearing about China. China is predicted to take over the US as the number one global superpower by 2032, and some estimate that to be even earlier. But how did this happen?</description>
+      <guid>http://localhost:1313/posts/why-china-history-matters/</guid>
+      <description>&lt;p&gt;Hi. It’s been a while. Sorry for not writing at all! I’ve been pretty busy, but I didn’t write because I was very lazy. So anyways, I’m back! Let’s get into today’s topic!&lt;/p&gt;
+&lt;p&gt;China. You can’t read the news without hearing about China. China is predicted to take over the US as the number one global superpower by 2032, and some estimate that to be even earlier. But how did this happen? As always, when you look at a topic, start with the basics. How did China begin, and how did their beginning differ from the US? Let’s dive into the birth of China.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Periodic Table of Elements</title>
-      <link>https://rohanarni.com/posts/periodic-table-of-elements/</link>
+      <link>http://localhost:1313/posts/periodic-table-of-elements/</link>
       <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/periodic-table-of-elements/</guid>
-      <description>It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.
-At a first glance, the periodic table looks like a childish table with all sorts of colors and silly letters. Most people know that those letters stand for elements. What are elements really?
-Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, and electrons.</description>
+      <guid>http://localhost:1313/posts/periodic-table-of-elements/</guid>
+      <description>&lt;p&gt;It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.&lt;/p&gt;
+&lt;p&gt;At a first glance, the periodic table looks like a childish table with all sorts of colors and silly letters. Most people know that those letters stand for elements. What are elements really?&lt;/p&gt;
+&lt;p&gt;Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, and electrons. The number of protons, electrons, and neutrons determine which element it is. It also determines the properties of each element.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My favorite books of all time</title>
-      <link>https://rohanarni.com/posts/my-fav-books/</link>
+      <link>http://localhost:1313/posts/my-fav-books/</link>
       <pubDate>Sat, 17 Apr 2021 22:16:25 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/my-fav-books/</guid>
-      <description>I love to read. Like, LOVE to read. As such, there are some books I loved and some books I hated. So here is my rundown of all my favorite books!
-But before we begin, I’d like to thank our sponsor, my YouTube channel! shameless plug I post Minecraft a few times every week. I’m trying to hit 100 subscribers by 2022, so it would mean a lot if you subscribed!</description>
+      <guid>http://localhost:1313/posts/my-fav-books/</guid>
+      <description>&lt;p&gt;I love to read. Like, LOVE to read. As such, there are some books I loved and some books I hated. So here is my rundown of all my favorite books!&lt;/p&gt;
+&lt;p&gt;But before we begin, I’d like to thank our sponsor, my YouTube channel! &lt;em&gt;shameless plug&lt;/em&gt; I post Minecraft a few times every week. I’m trying to hit 100 subscribers by 2022, so it would mean a lot if you subscribed! Click &lt;a href=&#34;https://www.youtube.com/channel/UCpmrt6zbA6h9DqWjHTPwexg&#34;&gt;here&lt;/a&gt; to subscribe.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Rise, Fall, and Rise Again of Minecraft</title>
-      <link>https://rohanarni.com/posts/rise-fall-rise-minecraft/</link>
+      <link>http://localhost:1313/posts/rise-fall-rise-minecraft/</link>
       <pubDate>Sun, 21 Mar 2021 23:28:57 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/rise-fall-rise-minecraft/</guid>
-      <description>Minecraft: A classic example of popular trends reviving a once popular game. When it was first released, it was the hottest game to ever come out. A simple yet unique game. There was no clear objective in the game. It was an infinite world with the capability to do anything. No fancy graphics, no violent gore. How did such a simple game become so popular across the world? Today, let’s look at the rise, fall, and rise again of Minecraft.</description>
+      <guid>http://localhost:1313/posts/rise-fall-rise-minecraft/</guid>
+      <description>&lt;p&gt;Minecraft: A classic example of popular trends reviving a once popular game. When it was first released, it was the hottest game to ever come out. A simple yet unique game. There was no clear objective in the game. It was an infinite world with the capability to do anything. No fancy graphics, no violent gore. How did such a simple game become so popular across the world? Today, let’s look at the rise, fall, and rise again of Minecraft.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Big Bang</title>
-      <link>https://rohanarni.com/posts/the-big-bang/</link>
+      <link>http://localhost:1313/posts/the-big-bang/</link>
       <pubDate>Sun, 14 Mar 2021 23:26:58 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/the-big-bang/</guid>
-      <description>First of all, The Big Bang Theory should be called The Big Bang Model. Just like the Theory of Evolution should be called Evolution. The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.
-This whole thing started with a singularity. The singularity is our whole universe, compressed into something smaller than a grain of sand.</description>
+      <guid>http://localhost:1313/posts/the-big-bang/</guid>
+      <description>&lt;p&gt;The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.&lt;/p&gt;
+&lt;p&gt;This whole thing started with a singularity. The singularity is our whole universe, compressed into something smaller than a grain of sand. It’s even smaller than an atom. So for whatever reason, it implodes. Like, it goes &lt;strong&gt;&lt;em&gt;KABOOM.&lt;/em&gt;&lt;/strong&gt; All the information of the universe balloons out at blinding speed. This is where things start to get kooky.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chess Openings, Part 2: Gambits</title>
-      <link>https://rohanarni.com/posts/chess-part-two/</link>
+      <link>http://localhost:1313/posts/chess-part-two/</link>
       <pubDate>Sun, 07 Mar 2021 14:30:06 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/chess-part-two/</guid>
-      <description>Last week, I went over openings. Let’s recap the basics:
-Always attack the center. The center is comprised of these 4 squares:
-Algebraic notation is like the coordinate system for chess. ABC’s for the x axis, and numbers for the y axis. Each piece has a letter designated for its moves. X is for killing. Let’s see an example:
-If the knight were to take the pawn on e4, it would be written as Nxe4.</description>
+      <guid>http://localhost:1313/posts/chess-part-two/</guid>
+      <description>&lt;p&gt;Last week, I went over openings. Let’s recap the basics:&lt;/p&gt;
+&lt;p&gt;Always attack the center. The center is comprised of these 4 squares:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/chess-part-two/images/1.png#layoutTextWidth&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Algebraic notation is like the coordinate system for chess. ABC’s for the x axis, and numbers for the y axis. Each piece has a letter designated for its moves. X is for killing. Let’s see an example:&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/chess-part-two/images/2.png#layoutTextWidth&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If the knight were to take the pawn on e4, it would be written as Nxe4.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>First Lego League</title>
-      <link>https://rohanarni.com/posts/first-lego-league/fll/</link>
+      <link>http://localhost:1313/posts/first-lego-league/fll/</link>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/first-lego-league/fll/</guid>
-      <description>The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
-Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions.</description>
+      <guid>http://localhost:1313/posts/first-lego-league/fll/</guid>
+      <description>&lt;p&gt;The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.&lt;/p&gt;
+&lt;p&gt;Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions. This is what the mat looked like:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Chess — The Basics</title>
-      <link>https://rohanarni.com/posts/chess-part-one/chess/</link>
+      <link>http://localhost:1313/posts/chess-part-one/chess/</link>
       <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/chess-part-one/chess/</guid>
-      <description>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.
-I have always thought about chess as a hobby. A simple game, and nothing more. Until a month ago. I realized that chess is so much more than just a game. There are strategies, tactics, gambits, baits and so much more.</description>
+      <guid>http://localhost:1313/posts/chess-part-one/chess/</guid>
+      <description>&lt;p&gt;Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.&lt;/p&gt;
+&lt;p&gt;I have always thought about chess as a hobby. A simple game, and nothing more. Until a month ago. I realized that chess is so much more than just a game. There are strategies, tactics, gambits, baits and so much more. Let’s take a dive into the crazy world of chess.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Welcome!</title>
-      <link>https://rohanarni.com/posts/welcome/</link>
+      <link>http://localhost:1313/posts/welcome/</link>
       <pubDate>Fri, 27 Nov 2020 04:37:05 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/welcome/</guid>
-      <description>Polymath (pol·y·math) - a person of wide-ranging knowledge or learning.
-What’s the point of being a polymath? Why does it matter? I think being an all-rounded person can help in many ways. Being a polymath allows you to unleash the creativity inside you. You can bring ideas to fruition. You can adapt with these constantly changing times. There are so many reasons why, I could probably write a whole 5 paragraph essay about it!</description>
+      <guid>http://localhost:1313/posts/welcome/</guid>
+      <description>&lt;p&gt;Polymath (pol·y·math) - a person of wide-ranging knowledge or learning.&lt;/p&gt;
+&lt;p&gt;What’s the point of being a polymath? Why does it matter? I think being an all-rounded person can help in many ways. Being a polymath allows you to unleash the creativity inside you. You can bring ideas to fruition. You can adapt with these constantly changing times. There are so many reasons why, I could probably write a whole 5 paragraph essay about it! I think my ELA teacher would like that. My point is that being a polymath is good for you and for others. It makes you more curious, and learn more about this wonderful world.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

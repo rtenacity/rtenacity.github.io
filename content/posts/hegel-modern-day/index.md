@@ -6,6 +6,7 @@ date: 2023-06-17
 description: ""
 
 subtitle: ""
+comments: true
 
 aliases:
   - "/hegel-modern-day/"

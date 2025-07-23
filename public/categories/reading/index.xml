@@ -2,20 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reading on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/reading/</link>
+    <link>http://localhost:1313/categories/reading/</link>
     <description>Recent content in Reading on rohanarni.com</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Apr 2021 22:16:25 +0000</lastBuildDate><atom:link href="https://rohanarni.com/categories/reading/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Jan 2023 17:49:16 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/reading/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My favorite books of all time</title>
-      <link>https://rohanarni.com/posts/my-fav-books/</link>
+      <link>http://localhost:1313/posts/my-fav-books/</link>
       <pubDate>Sat, 17 Apr 2021 22:16:25 +0000</pubDate>
-      
-      <guid>https://rohanarni.com/posts/my-fav-books/</guid>
-      <description>I love to read. Like, LOVE to read. As such, there are some books I loved and some books I hated. So here is my rundown of all my favorite books!
-But before we begin, I’d like to thank our sponsor, my YouTube channel! shameless plug I post Minecraft a few times every week. I’m trying to hit 100 subscribers by 2022, so it would mean a lot if you subscribed!</description>
+      <guid>http://localhost:1313/posts/my-fav-books/</guid>
+      <description>&lt;p&gt;I love to read. Like, LOVE to read. As such, there are some books I loved and some books I hated. So here is my rundown of all my favorite books!&lt;/p&gt;
+&lt;p&gt;But before we begin, I’d like to thank our sponsor, my YouTube channel! &lt;em&gt;shameless plug&lt;/em&gt; I post Minecraft a few times every week. I’m trying to hit 100 subscribers by 2022, so it would mean a lot if you subscribed! Click &lt;a href=&#34;https://www.youtube.com/channel/UCpmrt6zbA6h9DqWjHTPwexg&#34;&gt;here&lt;/a&gt; to subscribe.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir=" auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Relativity 1: Pre-Einstein | rohanarni.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="Note to reader: This is the first in a series.
+Relativity, we&rsquo;ve heard so much about it. Created by Einstein, it&rsquo;s lived in the minds of both physicists and the cultural zeitgeist. It&rsquo;s the idea behind black holes, time travel, and has single-handedly spawned off so many Hollywood movies.
+To truly understand the beauty of special relativity, we must go back in time. Relativity is not a new concept that Einstein created; it&rsquo;s been around since the time of Galileo and Newton. So what was this &ldquo;original&rdquo; relativity? Well, let&rsquo;s understand what relativity even means.">
+<meta name="author" content="Rohan Arni">
+<link rel="canonical" href="http://localhost:1313/posts/relativity-one/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1cf6fbdbc3148f9ba6f6431621c28cfe4a5c7dff305cc1132deab8fbbd12ea54.css" integrity="sha256-HPb728MUj5um9kMWIcKM/kpcff8wXMETLeq4&#43;70S6lQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/relativity-one/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="
+    top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">rohanarni.com</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                        <ul class="lang-switch"><li>|</li>
+                        </ul>
+                    </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/newsletter/" title="Newsletter">
+                    <span>Newsletter</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+    <header class="top" class="post-header">
+        
+        <h1 class="post-title">
+            Relativity 1: Pre-Einstein
+        </h1>
+        <div class="post-meta"><span title='2024-07-15 09:10:42 -0500 -0500'>July 15, 2024</span>&nbsp;·&nbsp;Rohan Arni
+
+</div>
+    </header> 
+    <div class="post-content"><p><em>Note to reader: This is the first in a series.</em></p>
+<p>Relativity, we&rsquo;ve heard so much about it. Created by Einstein, it&rsquo;s lived in the minds of both physicists and the cultural zeitgeist. It&rsquo;s the idea behind black holes, time travel, and has single-handedly spawned off so many Hollywood movies.</p>
+<p>To truly understand the beauty of special relativity, we must go back in time. Relativity is not a new concept that Einstein created; it&rsquo;s been around since the time of Galileo and Newton. So what was this &ldquo;original&rdquo; relativity? Well, let&rsquo;s understand what relativity even means.</p>
+<p>Suppose I am standing still, and you are walking at a constant speed ($u$) to the right. This places us in two separate &ldquo;reference frames&rdquo; (ways of looking at the universe). We can call both reference frames &ldquo;inertial&rdquo;, because in both cases, there is no net force/acceleration acting upon either of us ($\Sigma F = 0$). Relativity states that the same laws of mechanics work in all inertial reference frames, independent of frame velocity. But how can we come to this conclusion? Well, let&rsquo;s go back to our original scenario.</p>
+<p>Say we set our &ldquo;zero&rdquo; point when you and I cross the same position. Some time ($t$) away, a firecracker goes off. We both see the firecracker, but we see it from different reference frames. You have traveled some distance $d=ut$ (where $d$ is the distance you traveled, $u$ is your velocity, and $t$ is the time of the event), but I am still at the inital point. I can give it some description for position and time $(x, t)$, and you can give it a description $(x&rsquo;, t&rsquo;)$. We can draw it out:</p>
+<p><img alt="image" loading="lazy" src="/posts/relativity-one/images/graph1.excalidraw.png#layoutTextWidth"></p>
+<p>Now, we have our scenario fully established. In our world, our times are the same ($t&rsquo; = t$). We can also see the relationship between $x&rsquo;$ and $x$ from the drawing:</p>
+<p>$$
+x = x&rsquo; + ut $$</p>
+<p>We can rearrange the first statement and write the two equations:</p>
+<p>$$ x&rsquo; = x - ut \\ t&rsquo; = t $$</p>
+<p>We call this the Galilean Transformation. Really take the time to understand this scenario, as it is the basis for everything to come after.</p>
+<p>But if we&rsquo;re seeing with two different coordinates, how can we have the same laws of mechanics for both situations? Let&rsquo;s take a look at the most important one: $F=ma$. We have a function for position, we just need to find one for velocity and acceleration. For the velocities, we take the derivative of both sides (the rate of change):</p>
+<p>$$
+v&rsquo;=\frac{dx&rsquo;}{dt}=\frac{dx}{dt}-\frac{d}{dt}(ut)
+$$</p>
+<p>Since the derivative of position is velocity and the derivative of $ut$ with respect to $t$ is $u$, we get:</p>
+<p>$$
+v&rsquo; = v - u
+$$</p>
+<p>Now, for acceleration, we do the same thing again:</p>
+<p>$$
+a&rsquo; = \frac{dv&rsquo;}{dt}=\frac{dv}{dt}-\frac{d}{dt}(u)
+$$</p>
+<p>Since the derivative of velocity is acceleration and the derivative of $u$ with respect to $t$ is 0 (derivative of a constant is 0), we get:</p>
+<p>$$
+a&rsquo; = a - 0 \\
+a&rsquo; = a
+$$</p>
+<p>So, our accelerations are the same! Therefore,
+$$
+F&rsquo; = ma&rsquo; \\
+F = ma \\
+F&rsquo; = F
+$$
+We have proven that our forces are the same regardless of the reference frame (as long as it is inertial).</p>
+<p>This was the understanding of relativity in the old days. The world was happy, and it made sense. This was about to change very quickly, as in 1905, a patent clerk would publish a paper that would change the world.</p>
+
+
+    </div>
+
+    <center> <script async src="https://eocampaign1.com/form/1559edaa-677c-11f0-bbd4-eb13bbfcc584.js" data-form="1559edaa-677c-11f0-bbd4-eb13bbfcc584"></script></center>
+
+
+    <footer class="post-footer" class="bottom">
+        <ul class="post-tags">
+        </ul>
+    </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">rohanarni.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>

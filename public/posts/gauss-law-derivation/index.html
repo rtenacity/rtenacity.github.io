@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir=" auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Intution to Gauss&#39;s Law | rohanarni.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction
+Gauss&rsquo;s Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew.
+A special thank you to Professor Ramamurti Shankar for describing this intuitive way of explaining Gauss&rsquo;s Law.">
+<meta name="author" content="Rohan Arni">
+<link rel="canonical" href="http://localhost:1313/posts/gauss-law-derivation/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.1cf6fbdbc3148f9ba6f6431621c28cfe4a5c7dff305cc1132deab8fbbd12ea54.css" integrity="sha256-HPb728MUj5um9kMWIcKM/kpcff8wXMETLeq4&#43;70S6lQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/gauss-law-derivation/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="
+    top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+    <nav class="nav">
+        <div class="logo">
+            <a href="/">rohanarni.com</a>
+                    <div class="logo-switches">
+                        <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                            <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                            <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button>
+                        <ul class="lang-switch"><li>|</li>
+                        </ul>
+                    </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/newsletter/" title="Newsletter">
+                    <span>Newsletter</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<article class="post-single">
+    <header class="top" class="post-header">
+        
+        <h1 class="post-title">
+            Intution to Gauss&#39;s Law
+        </h1>
+        <div class="post-meta"><span title='2024-07-31 09:10:42 -0500 -0500'>July 31, 2024</span>&nbsp;·&nbsp;Rohan Arni
+
+</div>
+    </header> 
+    <div class="post-content"><h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
+<p>Gauss&rsquo;s Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew.</p>
+<p>A special thank you to Professor Ramamurti Shankar for describing this intuitive way of explaining Gauss&rsquo;s Law.</p>
+<h1 id="coulombs-law">Coulomb&rsquo;s Law<a hidden class="anchor" aria-hidden="true" href="#coulombs-law">#</a></h1>
+<p>Some particles have an intrinsic property called charge. Because charges come from particles, charge must be &ldquo;quantized&rdquo;, or come in discrete amounts. We know charge is always in multiples of $1.6 * 10^{-19}$ coulombs. This number is called $e$, or the elementary charge. This is the charge of a proton, and an electron has charge $-e$.</p>
+<p>To understand how charges interact with other charges, it might be helpful to recall how gravity works. We use Newton&rsquo;s Law of Universal Gravitation to describe the gravitational force:</p>
+<p>$$\vec{F}_g = G\cdot\frac{Mm}{|\vec{r}|^2} \hat{r}$$</p>
+<p>where $G$ is the gravitational constant, $M$ and $m$ represent the mass of two different objects, $\vec{r}$ is the vector that represents the distance between the two bodies, and $\hat{r}$ is a unit vector that points in the same direction as the distance between the two bodies.</p>
+<p>However, what happens when we only examine one body? We get what is known as a field. The gravitational field of a body is a property that all bodies with mass have. We write it as:</p>
+<p>$$g = \frac{\vec{F}_g}{m} = \frac{GM}{|\vec{r}|^2}\hat{r}$$</p>
+<p>This law is very similar to Coulomb&rsquo;s Law, which describes the force between two charges.</p>
+<p>Let&rsquo;s say we have two charges, $q_1$ and $q_2$. We know that they have to exert some force on each other. This is described by Coulomb&rsquo;s Law:</p>
+<p>$$\vec{F}_e = \frac{1}{4\pi\varepsilon_0}\cdot\frac{q_1q_2}{|\vec{r}|^2}\hat{r}$$</p>
+<p>The first term is Coulomb&rsquo;s constant (also written as $k$). The next term relates the product of the charges divided by the distance between them, and the third term creates a unit vector pointing in the direction of the distance between the charges. This allows us to create a force that points in the direction of the distance. Most introductory physics student have seen a form of this law.</p>
+<p>However, what happens when we have only one charge? We can use the same method that we used to create the gravitational field, and get the electric field:</p>
+<p>$$\vec{E}(\vec{r}) = \frac{\vec{F}_e}{q_2}=\frac{1}{4\pi\varepsilon_0}\cdot\frac{q}{|\vec{r}|^2}\hat{r}$$</p>
+<p>Similar to the gravitational field, whenever there is a charge present, there will be an electric field.</p>
+<h1 id="electric-field-of-a-loop">Electric Field of a Loop<a hidden class="anchor" aria-hidden="true" href="#electric-field-of-a-loop">#</a></h1>
+<p>Let&rsquo;s get some practice with integrals and the electric field. If this doesn&rsquo;t make sense, you can totally skip it. This is mainly just meant to show the work involved in calculating the electric field without Gauss&rsquo;s Law.</p>
+<p>Suppose we have a loop of radius $r$ and linear charge density $\lambda$. We want to find the electric field at a point $p$ near it. We can use the definition of the electric field and some integral calculus to do this.</p>
+<p>Let&rsquo;s draw our situation out:</p>
+<p><img alt="image" loading="lazy" src="/posts/gauss-law-derivation/images/loop.excalidraw.png"></p>
+<p>So, let&rsquo;s define a few things. The total charge is the linear charge density multiplied by the circumference of the loop We can solve this problem by dividing this ring into tiny sections of length $dl$. We can denote the position of $dl$ with a vector $\vec{r&rsquo;}$. We can denote the position of $p$ with a vector. Let&rsquo;s write these out:</p>
+<p>$$Q=2\pi r \lambda$$</p>
+<p>$$\vec{r}&rsquo;=&lt;r\cos \theta , r\sin \theta, 0&gt;$$</p>
+<p>$$\vec{p} = &lt;0, 0, z&gt;$$</p>
+<p>The distance between the point $p$ and dl can be written as the magnitude of a vector $\vec{R}$:
+$$|\vec{R}|=\sqrt{r^2+z^2}$$</p>
+<p>And the charge of $dl$ is:</p>
+<p>$$dq = \lambda dl$$</p>
+<p>Now, we can write the electric field formula for $dl$:</p>
+<p>$$d\vec{E}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \cdot \frac{dq}{|R|^2} \hat{R}$$</p>
+<p>To find $\hat{R}$ we use:</p>
+<p>$$\hat{R} = \frac{\vec{p}-\vec{r}&rsquo;}{|\vec{R}|} = \frac{&lt;0, 0, z&gt; - &lt;r \cos \theta, r \sin \theta, 0&gt;}{\sqrt{r^2+z^2}}$$</p>
+<p>$$\hat{R} = \frac{&lt;-r\cos \theta ,\ -r\sin \theta ,\ z&gt;}{\sqrt{r^2+z^2}}$$</p>
+<p>Now, we can write:</p>
+<p>$$d\vec{E}(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \cdot \frac{\lambda dl}{r^2+z^2} \cdot \frac{&lt;-r\cos \theta ,\ -r\sin \theta ,\ z&gt;}{\sqrt{r^2+z^2}}$$</p>
+<p>Now, by the symmetry of the loop, we know that the net electric field in the x and y direction will cancel, leaving only a net field in the z direction. Therefore, we can drop the x and y components of $\hat{R}$ and get:</p>
+<p>$$d\vec{E}_z(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \cdot \frac{\lambda dl}{r^2+z^2} \cdot \frac{z}{\sqrt{r^2+z^2}}$$</p>
+<p>We have one last modification to make before we integrate. Recall that</p>
+<p>$$ s = r\theta$$</p>
+<p>By this logic,</p>
+<p>$$dl = r d\theta$$</p>
+<p>We can finally write</p>
+<p>$$d\vec{E}_z(\vec{r}) = \frac{1}{4\pi\varepsilon_0} \cdot \frac{\lambda r d\theta}{r^2+z^2} \cdot \frac{z}{\sqrt{r^2+z^2}}$$</p>
+<p>Which collapses into
+$$d\vec{E}_z(\vec{r}) = \frac{\lambda r d\theta z}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}}$$</p>
+<p>Now, we can integrate. Writing this out, we get:</p>
+<p>$$\vec{E}_z(\vec{r}) = \int_0^{2\pi}\frac{\lambda r d\theta z}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}} = \frac{\lambda r z}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}} \cdot \int_0^{2\pi}d\theta$$</p>
+<p>Solving this (very easy) integral, we get</p>
+<p>$$\vec{E}_z(\vec{r}) = \frac{\lambda r z}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}} \cdot 2\pi= \vec{E}_z(\vec{r}) = \frac{\lambda r z}{2\varepsilon_0 (r^2+z^2)^{3/2}} $$</p>
+<p>That&rsquo;s our answer! We can write this alternatively, using $\lambda = \frac{Q}{2\pi r}$, to get another answer as</p>
+<p>$$\vec{E}_z(\vec{r}) = \frac{Qz}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}}$$</p>
+<p>This result will be important.</p>
+<h1 id="electric-field-around-an-infinite-sheet">Electric Field Around an Infinite Sheet<a hidden class="anchor" aria-hidden="true" href="#electric-field-around-an-infinite-sheet">#</a></h1>
+<p>Suppose we have an infinite sheet extending in the xy plane, and we want to know the electric field at a point p. The sheet has a surface charge density $\sigma$. We can divide the surface into small rings of radius $r$ and width $dr$ and then integrate them to find the net E-field at the point.</p>
+<p>We rewrite our result from last time:</p>
+<p>$$d\vec{E}_z(\vec{r}) = \frac{dq\cdot z}{4\pi\varepsilon_0 (r^2+z^2)^{3/2}}$$</p>
+<p>To find the charge for each small ring $dq$, we can use the properties of surface charge density to find:</p>
+<p>$$dq=2\pi r\cdot dr\cdot \sigma $$</p>
+<p>Substituting this into our answer, we get:</p>
+<p>$$dE_z=\frac{2\pi r\cdot dr\cdot \sigma \cdot z}{4\pi \varepsilon _0\left(r^2+z^2\right)^{\text{3/2}}}$$</p>
+<p>Cancelling out like terms, we can get our final form:</p>
+<p>$$dE_z=\frac{r\cdot dr\cdot \sigma \cdot z}{2\varepsilon _0\left(r^2+z^2\right)^{\text{3/2}}}$$</p>
+<p>Now, it&rsquo;s time to integrate.</p>
+<p>$$E_z=\frac{\sigma z}{2\varepsilon _0}\cdot \int _0^{\infty }\frac{r\cdot dr}{\left(r^2+z^2\right)^{\text{3/2}}}$$</p>
+<p>This integral is not as easy as last time. We can use the properties of u-substitution to solve this integral.</p>
+<p>$$u=r^2+z^2$$</p>
+<p>$$du=2rdr$$</p>
+<p>And when $r=0$, $u = z^2$. Therefore, we can use u-subsitution to write</p>
+<p>$$E_z=\frac{\sigma z}{2\varepsilon _0}\cdot \int _{z^2}^{\infty }\frac{du}{2u^{\text{3/2}}}$$</p>
+<p>I would explain how to solve this integral, but I was too lazy and used Mathway to solve this. Regardless, integrating and using the properties of indefinite integrals, we can expand this as:</p>
+<p>$$E_z=\frac{\sigma z}{2\varepsilon _0}\cdot \lim _{t\to \infty }\left(-\frac{1}{\sqrt{t}}+\frac{1}{\sqrt{z^2}}\right)$$</p>
+<p>Taking the limit, we get:</p>
+<p>$$E_z=\frac{\sigma z}{2\varepsilon _0}\cdot \frac{1}{z}$$</p>
+<p>Which just simplifies as</p>
+<p>$$\vec{E}(\vec{r})=\frac{\sigma }{2\epsilon _0}$$</p>
+<p>This shows that the field is constant for an infinite sheet. However, this was a real pain in the butt to solve for. What if there was an easier way? This is where Gauss&rsquo;s Law comes in.</p>
+<h1 id="area-vectors">Area Vectors<a hidden class="anchor" aria-hidden="true" href="#area-vectors">#</a></h1>
+<p>First, let&rsquo;s define what an area vector is. To locate a plane in space, we can draw a vector normal to the plane whose magnitude is the area of the plane. This allows us to find the flux on a surface, which is how much of a quantity flows through a plane. We write flux as:</p>
+<p>$$\Phi = \vec{A} \cdot \vec{V}$$</p>
+<p>Where V is any vector flowing into the surface.</p>
+<h2 id="deriving-gausss-law">Deriving Gauss&rsquo;s Law<a hidden class="anchor" aria-hidden="true" href="#deriving-gausss-law">#</a></h2>
+<p><img loading="lazy" src="/posts/gauss-law-derivation/images/Untitled-2024-07-09-2117.png"></p>
+<p>In the image above, we have a charge with radiating E-field lines. We have two surfaces enclosing it, a sphere $s$ and an irregular shape $s&rsquo;$. We know from the drawing that the number of lines crossing $s$ is the same number of lines crossing $s&rsquo;$.</p>
+<p>We can define line density as:</p>
+<p>$$\text{line density}=\frac{\text{lines}}{\perp \ \text{area}}$$</p>
+<p>Now, the farther the lines go out, the less dense they become. Therefore, line density follows the inverse square law. We can write that</p>
+<p>$$\text{line density}\propto \frac{q}{r^2}$$</p>
+<p>This equation states that line density is proportional to charge over radius squared (inverse square law).</p>
+<p>We also know from Coulomb&rsquo;s law that</p>
+<p>$$E\left(\vec{r}\right)\propto \frac{q}{r^2}$$</p>
+<p>Therefore, we can draw the conclusion that the electric field and line density are proportional to each other. So we know that they have to be equal when multiplied by some constant of proportionality.</p>
+<p>$$\text{line density}=c\cdot E\left(r\right)$$</p>
+<p>where c is some constant of proportionality. Now, remember that the number of lines on the sphere $s$ and the surface $s&rsquo;$ are the same. We can define the number of lines as the flux of the electric field.</p>
+<p>$$\Phi _s=\text{line density}\cdot \text{area of sphere}=cE\left(r\right)\cdot 4\pi r^2$$</p>
+<p>Now, for the complicated surface, we need to do something called a surface integral. The surface integral allows us to slice a complex surface into tiny rectangles and add them up again. Finding the flux for $s&rsquo;$, we write:</p>
+<p>$$\Phi _{s&rsquo;}=\text{line density}\cdot \text{area of surface}=c \oint_S E\left(\vec{r}\right)\cdot d\vec{A}$$</p>
+<p>Now, we can equate both statements to write:</p>
+<p>$$cE\left(r\right)\cdot 4\pi r^2=c\cdot \oint E\left(\vec{r}\right)\cdot d\vec{A}$$</p>
+<p>Cancelling like terms, we get</p>
+<p>$$c\cdot \frac{q}{\varepsilon _0}=c\oint_S \vec{E}\cdot d\vec{A}$$</p>
+<p>Cancelling our constant, we get:</p>
+<p>$$\oint_S \vec{E}\cdot d\vec{A}=\frac{q}{\varepsilon _0}$$</p>
+<p>This is Gauss&rsquo;s Law! We can keep going however. What happens when we have two charges enclosed in a surface? Using the superposition principle, we can write</p>
+<p>$$\oint_S \vec{E}_1\cdot d\vec{A}+\oint_S \vec{E}_2\cdot d\vec{A}=\frac{q_1}{\varepsilon _0}+\frac{q_2}{\varepsilon _0}$$</p>
+<p>Suppose we have a continuous blob of charge with charge density ρ. We can rewrite the above equation as</p>
+<p>$$\oint _s\ \vec{E}\cdot d\vec{A}=\iiint_V \rho(x, y, z)dxdydz$$</p>
+<p>Where the triple integral is a volume integral. This may look strange, but think about it logically. The charge density multiplied by the volume of a shape should logically be the charge enclosed by the shape.</p>
+<p>Simply put, <strong>Gauss&rsquo;s law relates the electric flux of a surface to how much charge is enclosed by that surface</strong>. Now that we have Gauss&rsquo;s Law, we can use it to solve a few things quicker.</p>
+<h1 id="infinite-sheet-gauss-style">Infinite Sheet: Gauss-Style<a hidden class="anchor" aria-hidden="true" href="#infinite-sheet-gauss-style">#</a></h1>
+<p>Redfine our infinite sheet, and instead of integrating rings, we&rsquo;re going to use something called a &ldquo;gaussian surface&rdquo; to solve this problem. A suitable choice is a cylindrical pillbox (a short cylinder) that straddles the sheet, with its flat faces parallel to the sheet.</p>
+<p><img loading="lazy" src="/posts/gauss-law-derivation/image.png"></p>
+<p>This image shows a pillbox extending from both ends of the surface. Due to the symmetry of the infinite sheet, the electric field must be perpendicular to the surface of the sheet and have the same magnitude at any point from the sheet on both sides.</p>
+<p>For the pillbox, the charge enclosed ($q_{enc}$) is:</p>
+<p>$$q_{enc} = \sigma A$$</p>
+<p>Where $A$ represents the area of the flat side of the the pillbox.</p>
+<p>To solve for the flux, the angle between the area vector of the flat side of the sheet is 0. The angle between the curved surface and the electric field is 90 degrees. Therefore, our flux (the cosine of the angle times the magnitude of the two vectors) is:</p>
+<p>$$\oint _S\ \vec{E}\cdot d\vec{A} = E\cdot A = EA$$</p>
+<p>However, it extends on both sides, so we rewrite as:</p>
+<p>$$\oint _S\ \vec{E}\cdot d\vec{A} = E\cdot A + E\cdot A = 2EA$$</p>
+<p>Now, after solving both sides, we can use Gauss&rsquo;s Law:</p>
+<p>$$\oint_S \vec{E}\cdot d\vec{A}=\frac{q}{\varepsilon _0}$$</p>
+<p>$$2EA = \frac{\sigma A}{\varepsilon_0}$$</p>
+<p>Rearranging, we get:</p>
+<p>$$\vec{E}(\vec{r})=\frac{\sigma }{2\epsilon _0}$$</p>
+<p>Which is the same result as before. But see how much easier that was? That&rsquo;s the power of Gauss&rsquo;s law.</p>
+<h1 id="electric-field-of-a-sphere">Electric Field of a Sphere<a hidden class="anchor" aria-hidden="true" href="#electric-field-of-a-sphere">#</a></h1>
+<p>Let&rsquo;s find the electric field of a uniformly charged sphere. We can pick a sphere of radius $R$., and surround it with a Gaussian sphere of $r$ ($r &gt; R$). Writing Gauss&rsquo;s Law, we find:</p>
+<p>$$\oint_S \vec{E}\cdot d\vec{A}=\frac{q_{enc}}{\varepsilon _0}$$</p>
+<p>We can write the electric field as:</p>
+<p>$$\vec{E}\left(r\right)=\hat{r}E\left(r\right)=\vec{e}_rE\left(r\right)$$</p>
+<p>So we know that the electric field is constant in a uniformly charged sphere. This means we can pull out the electric field from the integral, and get:</p>
+<p>$$\vec{E}\left(r\right)\cdot \oint d\vec{A}=\frac{q_{enc}}{\varepsilon _0}$$</p>
+<p>The surface area of a sphere is $4\pi r^2$, so the surface integral of $d\vec{A}$ is $4\pi r^2$.</p>
+<p>$$\vec{E}\left(r\right)=\frac{Q}{4\pi \varepsilon _0r^2}\vec{e}_r$$</p>
+<p>But what happens when we look inside a sphere? We can draw the scenario that $r &lt; R$. This means that the charge enclosed by the Gaussian surface is less than the total charge held by the sphere. The charge scales by the cubes of the radii.</p>
+<p>$$\vec{E}\left(r\right)=\frac{Q}{4\pi \varepsilon _0r^2} \cdot \frac{r^3}{R^3}\vec{e}_r$$
+This simplifies down to:</p>
+<p>$$\vec{E}\left(r\right)=\frac{q}{4\pi \varepsilon _0}\cdot \frac{r}{R^3}\vec{e}_r$$</p>
+<h1 id="conclusions">Conclusions<a hidden class="anchor" aria-hidden="true" href="#conclusions">#</a></h1>
+<p>Gauss&rsquo;s law is a clean way of relating the amount of electric field flowing through a surface (electric flux) to the charge enclosed by that surface. We can use &ldquo;Gaussian surfaces&rdquo;, which are ideal surfaces, to solve problems involving surfaces with irregular shapes as well. Gauss&rsquo;s law, although buried under complicated mathematical symbols, can be used very easily with these ideal surfaces. Surface integrals simply become surface areas of shapes, and volume integrals becomes the volume of surfaces multiplied by charge density. I hope this article provided some light and intuition into the way that you view Gauss&rsquo;s Law and electromagnetism.</p>
+
+
+    </div>
+
+    <center> <script async src="https://eocampaign1.com/form/1559edaa-677c-11f0-bbd4-eb13bbfcc584.js" data-form="1559edaa-677c-11f0-bbd4-eb13bbfcc584"></script></center>
+
+
+    <footer class="post-footer" class="bottom">
+        <ul class="post-tags">
+        </ul>
+    </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">rohanarni.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script></body>
+
+</html>
