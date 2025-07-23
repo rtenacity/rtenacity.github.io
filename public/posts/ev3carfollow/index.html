@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir=" auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Ev3 Projects: Car Following | rohanarni.com</title>
 <meta name="keywords" content="">
 <meta name="description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
 The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.">
 <meta name="author" content="Rohan Arni">
-<link rel="canonical" href="http://localhost:1313/posts/ev3carfollow/">
+<link rel="canonical" href="https://rohanarni.com/posts/ev3carfollow/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.1cf6fbdbc3148f9ba6f6431621c28cfe4a5c7dff305cc1132deab8fbbd12ea54.css" integrity="sha256-HPb728MUj5um9kMWIcKM/kpcff8wXMETLeq4&#43;70S6lQ=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://rohanarni.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://rohanarni.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://rohanarni.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://rohanarni.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://rohanarni.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/ev3carfollow/">
+<link rel="alternate" hreflang="en" href="https://rohanarni.com/posts/ev3carfollow/">
 <noscript>
     <style>
         #theme-toggle,
@@ -56,7 +56,78 @@ The thought process is quite simple. I was inspired by my parents’ car, the Le
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:url" content="https://rohanarni.com/posts/ev3carfollow/">
+  <meta property="og:site_name" content="rohanarni.com">
+  <meta property="og:title" content="Ev3 Projects: Car Following">
+  <meta property="og:description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-03-16T01:41:07+00:00">
+    <meta property="article:modified_time" content="2023-01-03T17:49:20-05:00">
+      <meta property="og:image" content="https://rohanarni.com/posts/2022-03-16_ev3-projects-car-following/images/1.jpeg">
+      <meta property="og:image" content="https://rohanarni.com/posts/2022-03-16_ev3-projects-car-following/images/2.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rohanarni.com/posts/2022-03-16_ev3-projects-car-following/images/1.jpeg">
+<meta name="twitter:title" content="Ev3 Projects: Car Following">
+<meta name="twitter:description" content="This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.
+The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://rohanarni.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Ev3 Projects: Car Following",
+      "item": "https://rohanarni.com/posts/ev3carfollow/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ev3 Projects: Car Following",
+  "name": "Ev3 Projects: Car Following",
+  "description": "This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.\nThe thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features that many modern cars have today known as adaptive cruise control.. Let’s break this project down into three aspects: the thought process, the hardware, and the software.\nThe thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out here) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.\nThe physical aspect of the robot is quite simple. I built a car that was modeled behind a formula one car (for the cool factor). It has an ultrasonic sensor on the front part of the car and a touch sensor on the back. The robot also has two large motors in the back for driving, and also has steering capabilities using the medium motor. However, I have disabled the steering capabilities to prevent the robot from veering.\nSide view\nTop view\nNow, let’s break down the code. The code can be found at my repository here.\n#!/usr/bin/python # coding: utf-8 # this program lets your ev3 follow a toy car accurately from ev3dev2.motor import * from ev3dev2.sensor.lego import UltrasonicSensor, GyroSensor, InfraredSensor, TouchSensor from ev3dev2.led import Leds from ev3dev2.sound import Sound from sys import stderr from time import sleep` These lines are just imports from the necessary libraries. `left_motor = LargeMotor(OUTPUT_C) right_motor = LargeMotor(OUTPUT_D) us = UltrasonicSensor() ts = TouchSensor()` These lines are just so that I can reference these items easily later in the program.\ncorrection = 0 kp = 1 power = 60 target = 10 This is where things begin to get interesting. The variable correction is just a blank variable for now. This will be used later in the program.\nThe variable kp, also known as the “constant of proportionality”, is the factor which changes how sharp the movement is. I’ve left it as the default value of 1.\nPower is the base speed of the car. I’ve set it to 60, which means that the motor is going at 60% full power as a baseline.\nTarget is the target range from the toy car to the Ev3. I’ve set it to 10 cm.\nleft_motor.run_direct() right_motor.run_direct() These lines start the motors.\nwhile True: error = target - us.distance_centimeters Error is the difference between the target value and the distance value. This will come in handy for the proportional line following.\nif ts.value(): break This line turns the touch sensor into a killswitch by breaking out of the while true loop.\nif error \u0026lt; 0: correction = (abs(float(error)/5))*kp if (correction+power) \u0026gt;= 100 or (correction+power) \u0026lt;= -100: correction = -(power) If error is less than 0, the Ev3 is too far from the car. The variable correction is error divided by 5 multiplied by the kp (constant of proportionality). Correction is added to power to change the final wheel speed, which speeds up the car (not shown here).\nThe second if statement is just to make sure the final wheel speed is not above 100 or less than -100, otherwise the robot will error out.\nif error \u0026gt; 0: correction = -(power) If error is more than 0, the Ev3 is too close to the car. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nif error == 0: correction = -(power) If error is equal than 0, the Ev3 is the perfect distance from the car, which makes the Ev3 stop. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nif us.distance_centimeters == 255.0: correction = -(power) The ultrasonic sensor has an error where it randomly reads 255 cm, so this line makes sure it doesn’t glitch out and mess up the algorithm by making the car stop. The car stops by making correction the inverse of power, which makes the final wheel speed equal to 0.\nprint(str(target)+\u0026#34;, \u0026#34;+str(us.distance_centimeters)+\u0026#34;, \u0026#34;+str(error)+\u0026#34;, \u0026#34;+str(correction)) This line is for debugging. It prints out the values of each of the important variables to figure out any issues with the robot.\nleft_motor.duty_cycle_sp= int(-(power + correction)) right_motor.duty_cycle_sp= int(-(power + correction)) These lines set the final wheel speed. I made the value negative because my robot’s wheels are backward.\nsleep(0.1) This line makes sure that the CPU doesn’t overheat.\nleft_motor.stop() right_motor.stop() When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.\nAnd that’s it!\nNote from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.\n",
+  "wordCount" : "895",
+  "inLanguage": "en",
+  "image": "https://rohanarni.com/posts/2022-03-16_ev3-projects-car-following/images/1.jpeg","datePublished": "2022-03-16T01:41:07.05Z",
+  "dateModified": "2023-01-03T17:49:20-05:00",
+  "author":{
+    "@type": "Person",
+    "name": "Rohan Arni"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rohanarni.com/posts/ev3carfollow/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "rohanarni.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://rohanarni.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="
@@ -104,27 +175,27 @@ The thought process is quite simple. I was inspired by my parents’ car, the Le
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/newsletter/" title="Newsletter">
+                <a href="https://rohanarni.com/newsletter/" title="Newsletter">
                     <span>Newsletter</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/posts/" title="Posts">
+                <a href="https://rohanarni.com/posts/" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="Categories">
+                <a href="https://rohanarni.com/categories/" title="Categories">
                     <span>Categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Archives">
+                <a href="https://rohanarni.com/archives/" title="Archives">
                     <span>Archives</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://rohanarni.com/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
@@ -227,7 +298,7 @@ right_motor.stop()
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="http://localhost:1313/">rohanarni.com</a></span>
+    <span>&copy; 2025 <a href="https://rohanarni.com/">rohanarni.com</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

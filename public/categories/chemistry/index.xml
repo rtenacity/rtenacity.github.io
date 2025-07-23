@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chemistry on rohanarni.com</title>
-    <link>http://localhost:1313/categories/chemistry/</link>
+    <link>https://rohanarni.com/categories/chemistry/</link>
     <description>Recent content in Chemistry on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jan 2023 17:49:17 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/chemistry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rohanarni.com/categories/chemistry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Periodic Table of Elements</title>
-      <link>http://localhost:1313/posts/periodic-table-of-elements/</link>
+      <link>https://rohanarni.com/posts/periodic-table-of-elements/</link>
       <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/periodic-table-of-elements/</guid>
+      <guid>https://rohanarni.com/posts/periodic-table-of-elements/</guid>
       <description>&lt;p&gt;It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.&lt;/p&gt;
 &lt;p&gt;At a first glance, the periodic table looks like a childish table with all sorts of colors and silly letters. Most people know that those letters stand for elements. What are elements really?&lt;/p&gt;
 &lt;p&gt;Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, and electrons. The number of protons, electrons, and neutrons determine which element it is. It also determines the properties of each element.&lt;/p&gt;</description>

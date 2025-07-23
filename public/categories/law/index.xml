@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Law on rohanarni.com</title>
-    <link>http://localhost:1313/categories/law/</link>
+    <link>https://rohanarni.com/categories/law/</link>
     <description>Recent content in Law on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Jan 2023 17:49:21 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/law/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rohanarni.com/categories/law/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marbury V. Madison: The First Supreme Court Case</title>
-      <link>http://localhost:1313/posts/marbury-v-madison/</link>
+      <link>https://rohanarni.com/posts/marbury-v-madison/</link>
       <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/marbury-v-madison/</guid>
+      <guid>https://rohanarni.com/posts/marbury-v-madison/</guid>
       <description>&lt;p&gt;On February 24, 1803, the first and most influential supreme court case of America occurred. This case lives in obscurity to most citizens, but without it, the Supreme Court would not have the power it has today. The issue of the case arose from a seemingly simple dispute. It all began during the Election of 1800. When incumbent president John Adams was voted out of office, he created a scheme to keep his party, the Federalists, in control of one of the branches of the government. Adams promoted many Federalists to become circuit judges and justices of peace. This way, the Federalist party could control the Judicial Branch of the government. However, one man that was promised a commission, William Marbury, never received one before Jefferson came into office. Jefferson declared the commission void and told his Secretary of State, James Madison, to not deliver the commission. Marbury sued Madison, and the court case began. The Supreme Court case Marbury v. Madison changed America for the better because it established the principle of judicial review, increased the power of the Supreme Court, and protected the rights of citizens.&lt;/p&gt;</description>
     </item>
   </channel>
