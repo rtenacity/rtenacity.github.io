@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Politics on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/politics/</link>
+    <link>http://localhost:1313/categories/politics/</link>
     <description>Recent content in Politics on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://rohanarni.com/categories/politics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/politics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hegelian Philosophy and the Modern Day</title>
-      <link>https://rohanarni.com/posts/hegel-modern-day/</link>
+      <link>http://localhost:1313/posts/hegel-modern-day/</link>
       <pubDate>Sat, 17 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://rohanarni.com/posts/hegel-modern-day/</guid>
+      <guid>http://localhost:1313/posts/hegel-modern-day/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;Those who cannot remember the past are condemned to repeat it.&amp;rdquo; - George Santayana&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The present can seem like a very unstable and turbulent time. It seems as if the world is splitting itself apart, becoming more polarized and opinionated. However, to understand the direction the world is headed, we need to look back in the past for answers.&lt;/p&gt;
@@ -20,16 +20,16 @@
     </item>
     <item>
       <title>Marbury V. Madison: The First Supreme Court Case</title>
-      <link>https://rohanarni.com/posts/marbury-v-madison/</link>
+      <link>http://localhost:1313/posts/marbury-v-madison/</link>
       <pubDate>Fri, 17 Jun 2022 04:25:03 +0000</pubDate>
-      <guid>https://rohanarni.com/posts/marbury-v-madison/</guid>
+      <guid>http://localhost:1313/posts/marbury-v-madison/</guid>
       <description>&lt;p&gt;On February 24, 1803, the first and most influential supreme court case of America occurred. This case lives in obscurity to most citizens, but without it, the Supreme Court would not have the power it has today. The issue of the case arose from a seemingly simple dispute. It all began during the Election of 1800. When incumbent president John Adams was voted out of office, he created a scheme to keep his party, the Federalists, in control of one of the branches of the government. Adams promoted many Federalists to become circuit judges and justices of peace. This way, the Federalist party could control the Judicial Branch of the government. However, one man that was promised a commission, William Marbury, never received one before Jefferson came into office. Jefferson declared the commission void and told his Secretary of State, James Madison, to not deliver the commission. Marbury sued Madison, and the court case began. The Supreme Court case Marbury v. Madison changed America for the better because it established the principle of judicial review, increased the power of the Supreme Court, and protected the rights of citizens.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why China’s History Matters So Much</title>
-      <link>https://rohanarni.com/posts/why-china-history-matters/</link>
+      <link>http://localhost:1313/posts/why-china-history-matters/</link>
       <pubDate>Sun, 29 Aug 2021 22:50:58 +0000</pubDate>
-      <guid>https://rohanarni.com/posts/why-china-history-matters/</guid>
+      <guid>http://localhost:1313/posts/why-china-history-matters/</guid>
       <description>&lt;p&gt;Hi. It’s been a while. Sorry for not writing at all! I’ve been pretty busy, but I didn’t write because I was very lazy. So anyways, I’m back! Let’s get into today’s topic!&lt;/p&gt;
 &lt;p&gt;China. You can’t read the news without hearing about China. China is predicted to take over the US as the number one global superpower by 2032, and some estimate that to be even earlier. But how did this happen? As always, when you look at a topic, start with the basics. How did China begin, and how did their beginning differ from the US? Let’s dive into the birth of China.&lt;/p&gt;</description>
     </item>

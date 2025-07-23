@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Science on rohanarni.com</title>
-    <link>https://rohanarni.com/categories/science/</link>
+    <link>http://localhost:1313/categories/science/</link>
     <description>Recent content in Science on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 31 Jul 2024 09:10:42 -0500</lastBuildDate>
-    <atom:link href="https://rohanarni.com/categories/science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intution to Gauss&#39;s Law</title>
-      <link>https://rohanarni.com/posts/gauss-law-derivation/</link>
+      <link>http://localhost:1313/posts/gauss-law-derivation/</link>
       <pubDate>Wed, 31 Jul 2024 09:10:42 -0500</pubDate>
-      <guid>https://rohanarni.com/posts/gauss-law-derivation/</guid>
+      <guid>http://localhost:1313/posts/gauss-law-derivation/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Gauss&amp;rsquo;s Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew.&lt;/p&gt;
 &lt;p&gt;A special thank you to Professor Ramamurti Shankar for describing this intuitive way of explaining Gauss&amp;rsquo;s Law.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple Harmonic Motion Isn&#39;t Very Simple</title>
-      <link>https://rohanarni.com/posts/not-so-simple-harmonic/</link>
+      <link>http://localhost:1313/posts/not-so-simple-harmonic/</link>
       <pubDate>Wed, 17 Jul 2024 09:10:42 -0500</pubDate>
-      <guid>https://rohanarni.com/posts/not-so-simple-harmonic/</guid>
+      <guid>http://localhost:1313/posts/not-so-simple-harmonic/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
 &lt;p&gt;This article is going to be math heavy. Be warned.&lt;/p&gt;
 &lt;p&gt;According to Google, an oscillator is a mechanical or electronic device that works on the principles of oscillation: a periodic fluctuation between two things based on changes in energy.&lt;/p&gt;
@@ -30,36 +30,36 @@
     </item>
     <item>
       <title>Relativity 2: Enter Einstein</title>
-      <link>https://rohanarni.com/posts/relativity-two/</link>
+      <link>http://localhost:1313/posts/relativity-two/</link>
       <pubDate>Tue, 16 Jul 2024 09:10:42 -0500</pubDate>
-      <guid>https://rohanarni.com/posts/relativity-two/</guid>
+      <guid>http://localhost:1313/posts/relativity-two/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note to reader: if you have not read part one, do so &lt;a href=&#34;https://rohanarni.com/posts/relativity-one&#34;&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;So, what was wrong with Galilean relativity? It help up perfectly well, until a Scottish mathematician by the names of James Clerk Maxwell created his four namesake laws of electricity and magnetism. As a consequence of his laws, he was able to derive the speed of light in a vacuum, which was given the variable $c$.&lt;/p&gt;
 &lt;p&gt;Now, according to Galilean relativity, the speed of light seen by a moving observer should be the speed of light minus the moving observer:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Relativity 1: Pre-Einstein</title>
-      <link>https://rohanarni.com/posts/relativity-one/</link>
+      <link>http://localhost:1313/posts/relativity-one/</link>
       <pubDate>Mon, 15 Jul 2024 09:10:42 -0500</pubDate>
-      <guid>https://rohanarni.com/posts/relativity-one/</guid>
+      <guid>http://localhost:1313/posts/relativity-one/</guid>
       <description>&lt;p&gt;&lt;em&gt;Note to reader: This is the first in a series.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Relativity, we&amp;rsquo;ve heard so much about it. Created by Einstein, it&amp;rsquo;s lived in the minds of both physicists and the cultural zeitgeist. It&amp;rsquo;s the idea behind black holes, time travel, and has single-handedly spawned off so many Hollywood movies.&lt;/p&gt;
 &lt;p&gt;To truly understand the beauty of special relativity, we must go back in time. Relativity is not a new concept that Einstein created; it&amp;rsquo;s been around since the time of Galileo and Newton. So what was this &amp;ldquo;original&amp;rdquo; relativity? Well, let&amp;rsquo;s understand what relativity even means.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Periodic Table of Elements</title>
-      <link>https://rohanarni.com/posts/periodic-table-of-elements/</link>
+      <link>http://localhost:1313/posts/periodic-table-of-elements/</link>
       <pubDate>Sun, 02 May 2021 21:54:03 +0000</pubDate>
-      <guid>https://rohanarni.com/posts/periodic-table-of-elements/</guid>
+      <guid>http://localhost:1313/posts/periodic-table-of-elements/</guid>
       <description>&lt;p&gt;It’s on every high school classroom. But only a few people truly understand the secrets that the table holds. Today, let’s dive in to the true nature of the periodic table.&lt;/p&gt;
 &lt;p&gt;At a first glance, the periodic table looks like a childish table with all sorts of colors and silly letters. Most people know that those letters stand for elements. What are elements really?&lt;/p&gt;
 &lt;p&gt;Elements are atoms. Atoms are comprised of three main parts: protons, neutrons, and electrons. The number of protons, electrons, and neutrons determine which element it is. It also determines the properties of each element.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Big Bang</title>
-      <link>https://rohanarni.com/posts/the-big-bang/</link>
+      <link>http://localhost:1313/posts/the-big-bang/</link>
       <pubDate>Sun, 14 Mar 2021 23:26:58 +0000</pubDate>
-      <guid>https://rohanarni.com/posts/the-big-bang/</guid>
+      <guid>http://localhost:1313/posts/the-big-bang/</guid>
       <description>&lt;p&gt;The Big Bang is the cosmic event that started the entire universe. So what exactly happened? Well, it took scientists years to find out what exactly happened, but we finally have a somewhat complete idea of what happened.&lt;/p&gt;
 &lt;p&gt;This whole thing started with a singularity. The singularity is our whole universe, compressed into something smaller than a grain of sand. It’s even smaller than an atom. So for whatever reason, it implodes. Like, it goes &lt;strong&gt;&lt;em&gt;KABOOM.&lt;/em&gt;&lt;/strong&gt; All the information of the universe balloons out at blinding speed. This is where things start to get kooky.&lt;/p&gt;</description>
     </item>
