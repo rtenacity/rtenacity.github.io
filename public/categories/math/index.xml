@@ -9,13 +9,14 @@
     <lastBuildDate>Wed, 31 Jul 2024 09:10:42 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Intution to Gauss&#39;s Law</title>
+      <title>Intuition to Gauss&#39;s Law</title>
       <link>http://localhost:1313/posts/gauss-law-derivation/</link>
       <pubDate>Wed, 31 Jul 2024 09:10:42 -0500</pubDate>
       <guid>http://localhost:1313/posts/gauss-law-derivation/</guid>
-      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Gauss&amp;rsquo;s Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew.&lt;/p&gt;
-&lt;p&gt;A special thank you to Professor Ramamurti Shankar for describing this intuitive way of explaining Gauss&amp;rsquo;s Law.&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Update: This article is the reason I got a five on AP Physics C, one year later.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Gauss&amp;rsquo;s Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
