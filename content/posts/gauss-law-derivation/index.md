@@ -1,5 +1,5 @@
 ---
-title: "Intution to Gauss's Law"
+title: "Intuition to Gauss's Law"
 author: "Rohan Arni"
 date: 2024-07-31T09:10:42-05:00
 draft: false
