@@ -11,6 +11,8 @@ categories: ["Science", "Math"]
 
 ---
 
+> Update: This article is the reason I got a five on AP Physics C, one year later.
+
 # Introduction
 Gauss's Law is a law that relates the flux of the electric field on a surface to the charge enclosed within that surface. What does that even mean? In this article, I want to walk you through the basics of electromagnetism and make it seem like even you could have derived this law if you knew what Gauss knew. 
 
@@ -294,3 +296,5 @@ $$\vec{E}\left(r\right)=\frac{q}{4\pi \varepsilon _0}\cdot \frac{r}{R^3}\vec{e}_
 # Conclusions
 
 Gauss's law is a clean way of relating the amount of electric field flowing through a surface (electric flux) to the charge enclosed by that surface. We can use "Gaussian surfaces", which are ideal surfaces, to solve problems involving surfaces with irregular shapes as well. Gauss's law, although buried under complicated mathematical symbols, can be used very easily with these ideal surfaces. Surface integrals simply become surface areas of shapes, and volume integrals becomes the volume of surfaces multiplied by charge density. I hope this article provided some light and intuition into the way that you view Gauss's Law and electromagnetism.
+
+---

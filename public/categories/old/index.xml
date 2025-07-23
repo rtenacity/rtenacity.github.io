@@ -24,7 +24,7 @@
 &lt;p&gt;The thought process is quite simple. I was inspired by my parents’ car, the Lexus RX 350. It has a feature that follows the car in front of it by keeping a constant distance from the other car. It can also speed up and down based on the speed of the other car. I thought that this would be quite easy to model with the Ev3 using principles from the PID line following algorithm. PID is an algorithm that “proportionally” follows a line. (I made a PID line follower on Github, which you can check out &lt;a href=&#34;https://github.com/rtenacity/LineFollower&#34;&gt;here&lt;/a&gt;) The algorithm uses how far away the robot is from the line to judge how much the robot should turn. Using the idea of proportionally following a target, I thought instead of following a line, I could make the robot follow a car.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tech Review #1: Blue Snowball</title>
+      <title>Blue Snowball Microphone Review</title>
       <link>http://localhost:1313/posts/tech-review-blue-snowball/</link>
       <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
       <guid>http://localhost:1313/posts/tech-review-blue-snowball/</guid>

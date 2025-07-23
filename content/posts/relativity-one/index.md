@@ -1,5 +1,5 @@
 ---
-title: "Relativity 1: Pre-Einstein"
+title: "Relativity: Pre-Einstein"
 author: "Rohan Arni"
 date: 2024-07-15T09:10:42-05:00
 draft: false
@@ -68,3 +68,5 @@ $$
 We have proven that our forces are the same regardless of the reference frame (as long as it is inertial).
 
 This was the understanding of relativity in the old days. The world was happy, and it made sense. This was about to change very quickly, as in 1905, a patent clerk would publish a paper that would change the world.
+
+---

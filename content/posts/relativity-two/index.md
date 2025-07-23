@@ -1,5 +1,5 @@
 ---
-title: "Relativity 2: Enter Einstein"
+title: "Relativity: Enter Einstein"
 author: "Rohan Arni"
 date: 2024-07-16T09:10:42-05:00
 draft: false
@@ -88,3 +88,5 @@ So this is good news! Our old ways of thinking hold up at small velocities.
 Regardless, $(x, t)$ and $(x', t')$ all cover the same space-time interval, a combination of distance and time. The space-time interval is invariant, meaning it does not change for all observers. As a result, the Lorentz transformations are invariant transformations, as they do not deform space-time.
 
 Does your head hurt yet? Mine sure did when I first read about all of this. Don't worry, it just gets weirder from here...
+
+---

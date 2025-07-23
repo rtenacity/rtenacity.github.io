@@ -4,8 +4,6 @@ author: "Rohan Arni"
 date: 2023-01-30T09:10:42-05:00
 draft: false
 
-subtitle: "This article is about a project I did with my Ev3 robot in which I made my Ev3 robot follow a toy car. This is similar to some features…"
-
 categories: ["Art", "History"] 
 
 ---
@@ -26,3 +24,5 @@ I give “The Starry Night” five stars.
 
 
 
+
+---

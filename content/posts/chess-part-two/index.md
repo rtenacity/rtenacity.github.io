@@ -53,3 +53,5 @@ Moving on, let’s take a look at some gambits. Gambits are where a piece is off
 White is offering the pawn, but in return white gains control of the entire center. Black generally declines by protecting its pawn.
 
 Thanks for reading!
+
+---

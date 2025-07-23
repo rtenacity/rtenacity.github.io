@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Technology on rohanarni.com</title>
+    <link>http://localhost:1313/categories/technology/</link>
+    <description>Recent content in Technology on rohanarni.com</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jun 2025 09:10:42 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Raytheon Radarange</title>
+      <link>http://localhost:1313/posts/technology-radarange/</link>
+      <pubDate>Mon, 30 Jun 2025 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/posts/technology-radarange/</guid>
+      <description>&lt;p&gt;The Raytheon Radarange was the first commercially available microwave. A clunky, chrome box weighing over 340 kg and costing over $5,000, the Radarange wasn’t widely adopted at the time. However, this artifact was chosen because it was a foundational step in advancing consumer food technology by changing the way Americans prepared food.&lt;/p&gt;
+&lt;p&gt;The Radarange was invented as a result of melted chocolate. In a Raytheon lab, Percy Spencer realized that his candy bar melted when he placed his chocolate bar next to a magnetron. Spencer realized that the magnetron (a special type of vacuum tube) was producing electromagnetic radiation, causing his chocolate bar to melt. Fascinated by this result, Spencer then took a bag of corn kernels and placed them near his magnetron, all of which popped into fresh, hot popcorn all over his lab. Presumably after a few laughs, Spencer and Raytheon realized the true potential of the technology they had on their hands and refined it to create the Radarange, sold starting in 1947.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blue Snowball Microphone Review</title>
+      <link>http://localhost:1313/posts/tech-review-blue-snowball/</link>
+      <pubDate>Sun, 12 Sep 2021 19:51:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tech-review-blue-snowball/</guid>
+      <description>&lt;p&gt;Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball! You may have heard of its older brother, the Blue Yeti, which is a professional-grade large microphone, but Blue, a Logitech brand, made another microphone, called the Blue Snowball.&lt;/p&gt;
+&lt;p&gt;The Blue Snowball is half the price of the Yeti at 49.99, and is half the size. It sports a unique design, with a three-legged stand and a ball-shaped microphone.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

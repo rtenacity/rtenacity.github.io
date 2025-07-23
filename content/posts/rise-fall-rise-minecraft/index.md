@@ -72,3 +72,5 @@ So this is where we are today. Has Minecraft peaked, or will it keep going? Who 
 Thanks for reading! Stay tuned!
 
 *Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*
+
+---

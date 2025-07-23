@@ -32,3 +32,5 @@ China was formed on the ideals of unity. China has a one-party system, leaning i
 A country that is not a free-market democracy succeeding is a new concept for many. But the concept that a country has to be free to be successful is a western concept. Clearly, that concept is up for debate, due to the overwhelming success of China. China cannot be explained in typical western concepts, which is what makes China so complex to most experts. It is simply impossible to explain China with western ideals. As time goes on, the idea that the west is the golden standard for a country will fade, and other cultures and concepts will arise, similar to China. One thing is for sure, and that the gold standard of westernization is over. And it’s all thanks to China’s history.
 
 *Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*
+
+---

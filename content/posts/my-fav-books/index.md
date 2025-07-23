@@ -35,3 +35,5 @@ Steve Jobs by Walter Isaacson is the tale of the life of Steve Jobs, from birth 
 That’s it for this week! I hope you enjoyed!
 
 *Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*
+
+---

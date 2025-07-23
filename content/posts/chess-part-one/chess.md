@@ -51,3 +51,5 @@ Ruy Lopez was a chess master in the 1500s, and he created a variation on the Kin
 {{</rawhtml>}}
 
 I hope this article helped you. Have fun playing chess!
+
+---

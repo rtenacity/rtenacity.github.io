@@ -39,3 +39,5 @@ Another example of judicial review is the court case Miranda v. Arizona. Miranda
 To sum it all up, Marbury v. Madison changed America for the better by creating the principle of judicial review, increased the power of the Supreme Court, and protected the rights of citizens. Judicial review was created to prevent the Supreme Court from making a difficult decision that would either give a win to the opposing political party or make the court seem weak. Judicial review allows the Supreme Court to strike down an act of the government due to the act violating the Constitution. Judicial review allows the Supreme Court more power, and with that power, the Supreme Court protects the rights of citizens. Should the Supreme Court have this much power?
 
 *Note from the author: This article was written in 2022 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.*
+
+---

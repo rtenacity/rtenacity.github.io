@@ -67,3 +67,5 @@ At the current state, there is no synthesis. However, the Hegelian synthesis can
 The Israel-Palestine conflict is just one example, but nearly every single current social or political issue can be visualized through the Hegelian dialectic.  -->
 
 *Expect more philosophy to come. - RA*
+
+---
