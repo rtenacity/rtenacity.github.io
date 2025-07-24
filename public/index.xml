@@ -15,8 +15,9 @@
       <guid>http://localhost:1313/posts/free-will-regression/</guid>
       <description>&lt;p&gt;Do we have free will? That’s a question that’s haunted many philosophers, scientists, and people contemplating their existence late at night. We might find some answers in linear regression, of all the places.&lt;/p&gt;
 &lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
-&lt;p&gt;Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.
-A simple, 2D linear regression model is given by a general form&lt;/p&gt;</description>
+&lt;p&gt;Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.&lt;/p&gt;
+&lt;center&gt; &lt;img src=&#34;images/linear_regression_example.png&#34; alt=&#34;Linear Regression&#34; /&gt; &lt;/center&gt; 
+&lt;p&gt;A simple, 2D linear regression model is given by a general form&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Raytheon Radarange</title>

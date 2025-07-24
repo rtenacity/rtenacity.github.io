@@ -15,6 +15,11 @@ Do we have free will? That’s a question that’s haunted many philosophers, sc
 
 ### Background
 Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.
+
+{{<rawhtml>}}<center> <img src="images/linear_regression_example.png" alt="Linear Regression" /> </center> {{</rawhtml>}}
+
+
+
 A simple, 2D linear regression model is given by a general form
 
 $$y = \beta_0 + \beta_1 x$$
@@ -23,18 +28,18 @@ $$y = \beta_0 + \beta_1 x$$
 Where $\beta_0, \beta_1$ are learnable parameters of the system. We can collect this into a matrix system of equations for $N$ finite data points:
 
 
-  $$\mathbf{y} = \mathbf{X}\mathbf{\beta} + \mathbf{\varepsilon}$$
+  $$\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$$
 
 
 Where:
 1. $\mathbf{y}$ is the $N\times 1$ matrix of observed dependent variables
 2. $\mathbf{X}$ is the $N \times 2$ matrix of independent variables (the first column is all ones, the second column is the $x$ values)
-3. $\mathbf{\beta}$ is the $2 \times 1$ matrix of coefficients
-4. $\mathbf{\varepsilon}$ is the $N \times 1$ matrix of errors for each prediction
+3. $\boldsymbol{\beta}$ is the $2 \times 1$ matrix of coefficients
+4. $\boldsymbol{\varepsilon}$ is the $N \times 1$ matrix of errors for each prediction
 These matrices look something like:
 
   
-How do we go about learning the parameters $\mathbf{\beta}$ of the data? There are two approaches: solving the normal equations for least squares or performing gradient descent.
+How do we go about learning the parameters $\boldsymbol{\beta}$ of the data? There are two approaches: solving the normal equations for least squares or performing gradient descent.
 
 ### Least Squares
 We want to minimize the sum of squared residuals (how inaccurate the model is compared to the true dependent variable:
@@ -53,7 +58,7 @@ Now, we can solve for $\boldsymbol{\beta}$ as
 \mathbf{X}^\top \mathbf{y} = \mathbf{X}^{\top} \mathbf{X} \boldsymbol{\beta} $$$$
 \boldsymbol{\beta} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$$
 
-This is an exact solution for our model parameter vector $\boldsymbol{\beta}$.
+This is an exact solution for our model parameter vector $\boldsymbol{\beta}$. This is a one-shot computation that gives us the best fit line for our data.
 
 ### Gradient Descent
 We want to minimize this loss function called the mean squared error (MSE).
@@ -67,7 +72,7 @@ Once again, we take the derivative of the loss function with respect to $\boldsy
 
   $$\nabla_{\boldsymbol{\beta}} J = -\frac{1}{n} \mathbf{X}^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})$$
 
-- This gives the direction of steepest ascent, so for gradient descent we subtract it. Given some small learning rate $\alpha$, we update our parameters as follows
+This gives the direction of steepest ascent, so for gradient descent we subtract it. Given some small learning rate $\alpha$, we update our parameters as follows
     $$\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \alpha \nabla_{\boldsymbol{\beta}} J$$
 
 
@@ -78,7 +83,7 @@ Or,
   $$\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} + \frac{\alpha}{n} \mathbf{X}^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta}^{(t)})$$
 
   
-We can repeat this process until the model converges to a minimum loss.
+We can repeat this process until the model converges to a minimum loss. This is an iterative process, and the model will not always converge to the same solution every time. The learning rate $\alpha$ and number of iterations can affect the final solution.
  
 ### Free Will and Regression
 There's a pretty interesting correlation between these methods of solving linear regression and some ideas relating to the problem of free will. There's a direct correlation between hard determinism (the idea that the universe is pre-determined and you have no individual free will) and the least squares solution to regression. Notice how the least squares solution is an exact, precise computation, giving an exact answer every time. This is  similar to the idea that we follow pre-determined paths to an end result, an idea that comes from hard determinism.

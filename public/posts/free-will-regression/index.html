@@ -10,6 +10,7 @@
 <meta name="description" content="Do we have free will? That’s a question that’s haunted many philosophers, scientists, and people contemplating their existence late at night. We might find some answers in linear regression, of all the places.
 Background
 Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.
+   
 A simple, 2D linear regression model is given by a general form">
 <meta name="author" content="Rohan Arni">
 <link rel="canonical" href="http://localhost:1313/posts/free-will-regression/">
@@ -164,20 +165,21 @@ A simple, 2D linear regression model is given by a general form">
     </header> 
     <div class="post-content"><p>Do we have free will? That’s a question that’s haunted many philosophers, scientists, and people contemplating their existence late at night. We might find some answers in linear regression, of all the places.</p>
 <h3 id="background">Background<a hidden class="anchor" aria-hidden="true" href="#background">#</a></h3>
-<p>Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.
-A simple, 2D linear regression model is given by a general form</p>
+<p>Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.</p>
+<center> <img src="images/linear_regression_example.png" alt="Linear Regression" /> </center> 
+<p>A simple, 2D linear regression model is given by a general form</p>
 <p>$$y = \beta_0 + \beta_1 x$$</p>
 <p>Where $\beta_0, \beta_1$ are learnable parameters of the system. We can collect this into a matrix system of equations for $N$ finite data points:</p>
-<p>$$\mathbf{y} = \mathbf{X}\mathbf{\beta} + \mathbf{\varepsilon}$$</p>
+<p>$$\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$$</p>
 <p>Where:</p>
 <ol>
 <li>$\mathbf{y}$ is the $N\times 1$ matrix of observed dependent variables</li>
 <li>$\mathbf{X}$ is the $N \times 2$ matrix of independent variables (the first column is all ones, the second column is the $x$ values)</li>
-<li>$\mathbf{\beta}$ is the $2 \times 1$ matrix of coefficients</li>
-<li>$\mathbf{\varepsilon}$ is the $N \times 1$ matrix of errors for each prediction
+<li>$\boldsymbol{\beta}$ is the $2 \times 1$ matrix of coefficients</li>
+<li>$\boldsymbol{\varepsilon}$ is the $N \times 1$ matrix of errors for each prediction
 These matrices look something like:</li>
 </ol>
-<p>How do we go about learning the parameters $\mathbf{\beta}$ of the data? There are two approaches: solving the normal equations for least squares or performing gradient descent.</p>
+<p>How do we go about learning the parameters $\boldsymbol{\beta}$ of the data? There are two approaches: solving the normal equations for least squares or performing gradient descent.</p>
 <h3 id="least-squares">Least Squares<a hidden class="anchor" aria-hidden="true" href="#least-squares">#</a></h3>
 <p>We want to minimize the sum of squared residuals (how inaccurate the model is compared to the true dependent variable:</p>
 <p>$$S(\boldsymbol{\beta}) = (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})$$</p>
@@ -187,19 +189,17 @@ These matrices look something like:</li>
 <p>$$\mathbf{X}^\top \mathbf{y} - \mathbf{X}^{\top} \mathbf{X} \boldsymbol{\beta} = 0 $$$$
 \mathbf{X}^\top \mathbf{y} = \mathbf{X}^{\top} \mathbf{X} \boldsymbol{\beta} $$$$
 \boldsymbol{\beta} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$$</p>
-<p>This is an exact solution for our model parameter vector $\boldsymbol{\beta}$.</p>
+<p>This is an exact solution for our model parameter vector $\boldsymbol{\beta}$. This is a one-shot computation that gives us the best fit line for our data.</p>
 <h3 id="gradient-descent">Gradient Descent<a hidden class="anchor" aria-hidden="true" href="#gradient-descent">#</a></h3>
 <p>We want to minimize this loss function called the mean squared error (MSE).</p>
 <p>$$J(\boldsymbol{\beta}) = \frac{1}{2n} (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})$$</p>
 <p>Once again, we take the derivative of the loss function with respect to $\boldsymbol{\beta}$.</p>
 <p>$$\nabla_{\boldsymbol{\beta}} J = -\frac{1}{n} \mathbf{X}^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta})$$</p>
-<ul>
-<li>This gives the direction of steepest ascent, so for gradient descent we subtract it. Given some small learning rate $\alpha$, we update our parameters as follows
-$$\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \alpha \nabla_{\boldsymbol{\beta}} J$$</li>
-</ul>
+<p>This gives the direction of steepest ascent, so for gradient descent we subtract it. Given some small learning rate $\alpha$, we update our parameters as follows
+$$\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \alpha \nabla_{\boldsymbol{\beta}} J$$</p>
 <p>Or,</p>
 <p>$$\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} + \frac{\alpha}{n} \mathbf{X}^T (\mathbf{y} - \mathbf{X} \boldsymbol{\beta}^{(t)})$$</p>
-<p>We can repeat this process until the model converges to a minimum loss.</p>
+<p>We can repeat this process until the model converges to a minimum loss. This is an iterative process, and the model will not always converge to the same solution every time. The learning rate $\alpha$ and number of iterations can affect the final solution.</p>
 <h3 id="free-will-and-regression">Free Will and Regression<a hidden class="anchor" aria-hidden="true" href="#free-will-and-regression">#</a></h3>
 <p>There&rsquo;s a pretty interesting correlation between these methods of solving linear regression and some ideas relating to the problem of free will. There&rsquo;s a direct correlation between hard determinism (the idea that the universe is pre-determined and you have no individual free will) and the least squares solution to regression. Notice how the least squares solution is an exact, precise computation, giving an exact answer every time. This is  similar to the idea that we follow pre-determined paths to an end result, an idea that comes from hard determinism.</p>
 <p>The gradient descent approach has more degrees of freedom (learning rate, number of iterations), and the model &ldquo;learns&rdquo; the parameters of the solution as guided by some &ldquo;cost&rdquo; function (in this case the MSE loss function). This idea is similar to the idea of soft determinism, where we have our own freedom to choose the actions but will lead to the same result as if the universe was deterministic. We have the freedom to choose our actions (each step of gradient descent represents an action we take), but will approach the same result as if the universe had a pre-determined result (least squares regression). However, the main difference is that gradient descent is not guaranteed to take the same path every time, and it can get stuck in local minima. This is similar to the idea that we have the freedom to choose our actions, but we may not always make the best choices.</p>
