@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>First Lego League | rohanarni.com</title>
 <meta name="keywords" content="">
-<meta name="description" content="The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
+<meta name="description" content="The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions involving this robot. I participated in two of them. How did it go? Let’s find out.
 Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions. This is what the mat looked like:">
 <meta name="author" content="Rohan Arni">
 <link rel="canonical" href="http://localhost:1313/posts/first-lego-league/fll/">
@@ -142,7 +142,7 @@ Let’s establish some context. My friend invited me to a robotics competition t
 
 </div>
     </header> 
-    <div class="post-content"><p>The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.</p>
+    <div class="post-content"><p>The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions involving this robot. I participated in two of them. How did it go? Let’s find out.</p>
 <p>Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions. This is what the mat looked like:</p>
 
 <center><figure>
@@ -163,71 +163,69 @@ Let’s establish some context. My friend invited me to a robotics competition t
 </figure>
 </center>
 
-<p>Let’s look at the software design.</p>
+<p>So this is all the software design. Let’s look at the hardware:</p>
+
+
+<iframe src="https://player.vimeo.com/video/517806926" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
+<p>Pretty neat, right? Now, let’s look at the software design.</p>
 <p>This is the launcher code:</p>
-<pre tabindex="0"><code>#!/usr/bin/env python3
-from ev3dev2.motor import *
-from ev3dev2.sensor.lego import *
-from ev3dev2.button import *
-from ev3dev2.wheel import *
-from ev3dev2.sound import *
-import library
-steering = MoveSteering(OUTPUT_C, OUTPUT_B)
-motor = MediumMotor()
-tank = MoveTank(OUTPUT_B, OUTPUT_C)
-STUD_MM = 8
-mdiff = MoveDifferential(OUTPUT_B, OUTPUT_C, EV3Tire, 16 * STUD_MM)
-tank.gyro = GyroSensor()
-mdiff.gyro = GyroSensor()
-btn = Button()
-sound = Sound()
-sound.play_tone(880, 0.25)
-sound.play_tone(440, 0.25)
-library.choice(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering,btn, sound)
-</code></pre><p>This program is fairly simple. It has standard imports, some typical definitions for the robot to run, and then it invokes the choice function from the library. The choice function is the main function that runs the robot. It is defined in the library.py file. Here is the code for the library.py file:</p>
-<pre tabindex="0"><code>import bench
-import dance
-import bottom_right
-import step_slide
-import stepper
-import slide
-import input
-import treadmil
-import treadmil_gate
-def choice(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering, btn, sound):
-    while True:
-        print(“ready for next command”)
-        functionNumber = input.readKeys(btn, sound)
-        print(functionNumber)
-        if functionNumber == 1:
-            bench.go(tank)
-        elif functionNumber == 2:
-            stepper.go(tank, SpeedPercent, follow_for_ms, motor, mdiff)
-        elif functionNumber == 3:
-            treadmil_gate.go(tank, SpeedPercent, follow_for_ms, motor, mdiff)
-        elif functionNumber == 0:
-            dance.dance_now(tank, steering)
-</code></pre><p>The choice function is a launcher for a program that we wrote to complete a mission. We used the buttons on the robot to define the variable <code>functionNumber</code>. Depending on the buttons that we pressed, the functionNumber would be different. This may seem extraneous, but this solves a major issue that ev3dev presents. If we were to do this normally and have a different program for each mission, the bootup time would be too long. So we used this launcher to invoke the function for each mission. <!-- raw HTML omitted --> Let’s take a look at the code for one of the missions:</p>
-
-<center><figure>
-    <img loading="lazy" src="/img/fll3.webp"/> <figcaption>
-            The Stepper
-        </figcaption>
-</figure>
-</center>
-
-<p>The goal is to push that green tab into the purple-and-black box.</p>
-<pre tabindex="0"><code>from time import sleep
-def go(tank, SpeedPercent, follow_for_ms, motor, mdiff):
-    #forward fast 63cm
-    tank.on_for_rotations(50, 50, 5.0)
-#forward slow 20cm
-for i in range(33):
-    tank.on_for_rotations(5, 5, 0.05)
-    sleep(0.03)
-#backward fast 32cm
-tank.on_for_rotations(-50, -50, 10)
-</code></pre><p>No imports, as you can see. There is no need for them, as library.py has the imports.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.motor <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.sensor.lego <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.button <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.wheel <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.sound <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> library
+</span></span><span style="display:flex;"><span>steering <span style="color:#f92672">=</span> MoveSteering(OUTPUT_C, OUTPUT_B)
+</span></span><span style="display:flex;"><span>motor <span style="color:#f92672">=</span> MediumMotor()
+</span></span><span style="display:flex;"><span>tank <span style="color:#f92672">=</span> MoveTank(OUTPUT_B, OUTPUT_C)
+</span></span><span style="display:flex;"><span>STUD_MM <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>
+</span></span><span style="display:flex;"><span>mdiff <span style="color:#f92672">=</span> MoveDifferential(OUTPUT_B, OUTPUT_C, EV3Tire, <span style="color:#ae81ff">16</span> <span style="color:#f92672">*</span> STUD_MM)
+</span></span><span style="display:flex;"><span>tank<span style="color:#f92672">.</span>gyro <span style="color:#f92672">=</span> GyroSensor()
+</span></span><span style="display:flex;"><span>mdiff<span style="color:#f92672">.</span>gyro <span style="color:#f92672">=</span> GyroSensor()
+</span></span><span style="display:flex;"><span>btn <span style="color:#f92672">=</span> Button()
+</span></span><span style="display:flex;"><span>sound <span style="color:#f92672">=</span> Sound()
+</span></span><span style="display:flex;"><span>sound<span style="color:#f92672">.</span>play_tone(<span style="color:#ae81ff">880</span>, <span style="color:#ae81ff">0.25</span>)
+</span></span><span style="display:flex;"><span>sound<span style="color:#f92672">.</span>play_tone(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0.25</span>)
+</span></span><span style="display:flex;"><span>library<span style="color:#f92672">.</span>choice(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering,btn, sound)
+</span></span></code></pre></div><p>This program is fairly simple. It has standard imports, some typical definitions for the robot to run, and then it invokes the choice function from the library. The choice function is the main function that runs the robot. It is defined in the library.py file. Here is the code for the library.py file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> bench
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> dance
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> bottom_right
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> step_slide
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> stepper
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> slide
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> input
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> treadmil
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> treadmil_gate
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">choice</span>(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering, btn, sound):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#960050;background-color:#1e0010">“</span>ready <span style="color:#66d9ef">for</span> next command<span style="color:#960050;background-color:#1e0010">”</span>)
+</span></span><span style="display:flex;"><span>        functionNumber <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>readKeys(btn, sound)
+</span></span><span style="display:flex;"><span>        print(functionNumber)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> functionNumber <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>            bench<span style="color:#f92672">.</span>go(tank)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> functionNumber <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>            stepper<span style="color:#f92672">.</span>go(tank, SpeedPercent, follow_for_ms, motor, mdiff)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> functionNumber <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>:
+</span></span><span style="display:flex;"><span>            treadmil_gate<span style="color:#f92672">.</span>go(tank, SpeedPercent, follow_for_ms, motor, mdiff)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> functionNumber <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            dance<span style="color:#f92672">.</span>dance_now(tank, steering)
+</span></span></code></pre></div><p>The choice function is a launcher for a program that we wrote to complete a mission. We used the buttons on the robot to define the variable <code>functionNumber</code>. Depending on the buttons that we pressed, the functionNumber would be different. This may seem extraneous, but this solves a major issue that ev3dev presents. If we were to do this normally and have a different program for each mission, the bootup time would be too long. So we used this launcher to invoke the function for each mission. <!-- raw HTML omitted --> Let’s take a look at the code for one of the missions:</p>
+<p>The goal is to push a green tab into the purple-and-black box.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">go</span>(tank, SpeedPercent, follow_for_ms, motor, mdiff):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#forward fast 63cm</span>
+</span></span><span style="display:flex;"><span>    tank<span style="color:#f92672">.</span>on_for_rotations(<span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">5.0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#forward slow 20cm</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">33</span>):
+</span></span><span style="display:flex;"><span>    tank<span style="color:#f92672">.</span>on_for_rotations(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">0.05</span>)
+</span></span><span style="display:flex;"><span>    sleep(<span style="color:#ae81ff">0.03</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#backward fast 32cm</span>
+</span></span><span style="display:flex;"><span>tank<span style="color:#f92672">.</span>on_for_rotations(<span style="color:#f92672">-</span><span style="color:#ae81ff">50</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">10</span>)
+</span></span></code></pre></div><p>No imports, as you can see. There is no need for them, as library.py has the imports.</p>
 <p>So this whole thing is a function that library invokes. First, the robot uses the tank function, which controls the robot’s wheels as a tank. It goes forward for 5 rotations, which is 63 cm. That takes us close to the stepper contraption. We go slower for 20 cm to push the stepper in using the tank function. Then we back out of there super fast to save time, coming back to the home base.</p>
 <p>Thanks for reading!</p>
 <pre tabindex="0"><code>print(&#34;End of file.&#34;)

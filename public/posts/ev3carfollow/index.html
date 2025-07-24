@@ -149,67 +149,72 @@ The thought process is quite simple. I was inspired by my parents’ car, the Le
 Side view</p>
 <p><img alt="image" loading="lazy" src="/posts/ev3carfollow/images/2.jpeg#layoutTextWidth">
 Top view</p>
+
+
+<iframe src="https://player.vimeo.com/video/688664126" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
 <p>Now, let’s break down the code. The code can be found at my repository <a href="https://github.com/rtenacity/CarFollower">here</a>.</p>
-<pre tabindex="0"><code>#!/usr/bin/python  
-# coding: utf-8  
-
-# this program lets your ev3 follow a toy car accurately  
-
-from ev3dev2.motor import *  
-from ev3dev2.sensor.lego import UltrasonicSensor, GyroSensor, InfraredSensor, TouchSensor  
-from ev3dev2.led import Leds  
-from ev3dev2.sound import Sound  
-from sys import stderr  
-from time import sleep`
-
-These lines are just imports from the necessary libraries.
-`left_motor = LargeMotor(OUTPUT_C)   
-right_motor = LargeMotor(OUTPUT_D)  
-us = UltrasonicSensor()  
-ts = TouchSensor()`
-</code></pre><p>These lines are just so that I can reference these items easily later in the program.</p>
-<pre tabindex="0"><code>correction = 0  
-
-kp = 1   
-power = 60  
-target = 10
-</code></pre><p>This is where things begin to get interesting. The variable <strong>correction</strong> is just a blank variable for now. This will be used later in the program.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/python  </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># coding: utf-8  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># this program lets your ev3 follow a toy car accurately  </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.motor <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.sensor.lego <span style="color:#f92672">import</span> UltrasonicSensor, GyroSensor, InfraredSensor, TouchSensor  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.led <span style="color:#f92672">import</span> Leds  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ev3dev2.sound <span style="color:#f92672">import</span> Sound  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sys <span style="color:#f92672">import</span> stderr  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> time <span style="color:#f92672">import</span> sleep<span style="color:#960050;background-color:#1e0010">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>These lines are just imports <span style="color:#f92672">from</span> the necessary libraries<span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">`</span>left_motor <span style="color:#f92672">=</span> LargeMotor(OUTPUT_C)   
+</span></span><span style="display:flex;"><span>right_motor <span style="color:#f92672">=</span> LargeMotor(OUTPUT_D)  
+</span></span><span style="display:flex;"><span>us <span style="color:#f92672">=</span> UltrasonicSensor()  
+</span></span><span style="display:flex;"><span>ts <span style="color:#f92672">=</span> TouchSensor()<span style="color:#960050;background-color:#1e0010">`</span>
+</span></span></code></pre></div><p>These lines are just so that I can reference these items easily later in the program.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>correction <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>kp <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>   
+</span></span><span style="display:flex;"><span>power <span style="color:#f92672">=</span> <span style="color:#ae81ff">60</span>  
+</span></span><span style="display:flex;"><span>target <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span></code></pre></div><p>This is where things begin to get interesting. The variable <strong>correction</strong> is just a blank variable for now. This will be used later in the program.</p>
 <p>The variable <strong>kp</strong>, also known as the “constant of proportionality”, is the factor which changes how sharp the movement is. I’ve left it as the default value of 1.</p>
 <p><strong>Power</strong> is the base speed of the car. I’ve set it to 60, which means that the motor is going at 60% full power as a baseline.</p>
 <p><strong>Target</strong> is the target range from the toy car to the Ev3. I’ve set it to 10 cm.</p>
-<pre tabindex="0"><code>left_motor.run_direct()  
-right_motor.run_direct()
-</code></pre><p>These lines start the motors.</p>
-<pre tabindex="0"><code>while True:  
-    error = target - us.distance_centimeters
-</code></pre><p><strong>Error</strong> is the difference between the target value and the distance value. This will come in handy for the <strong>proportional</strong> line following.</p>
-<pre tabindex="0"><code>if ts.value():  
-        break
-</code></pre><p>This line turns the touch sensor into a killswitch by breaking out of the while true loop.</p>
-<pre tabindex="0"><code>if error &amp;lt; 0:   
-        correction = (abs(float(error)/5))*kp  
-        if (correction+power) &amp;gt;= 100 or (correction+power) &amp;lt;= -100:   
-            correction = -(power)
-</code></pre><p>If <strong>error</strong> is less than 0, the Ev3 is too far from the car. The variable <strong>correction</strong> is <strong>error</strong> divided by 5 multiplied by the <strong>kp</strong> (constant of proportionality). <strong>Correction</strong> is added to <strong>power</strong> to change the final wheel speed, which speeds up the car (not shown here).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>left_motor<span style="color:#f92672">.</span>run_direct()  
+</span></span><span style="display:flex;"><span>right_motor<span style="color:#f92672">.</span>run_direct()
+</span></span></code></pre></div><p>These lines start the motors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:  
+</span></span><span style="display:flex;"><span>    error <span style="color:#f92672">=</span> target <span style="color:#f92672">-</span> us<span style="color:#f92672">.</span>distance_centimeters
+</span></span></code></pre></div><p><strong>Error</strong> is the difference between the target value and the distance value. This will come in handy for the <strong>proportional</strong> line following.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ts<span style="color:#f92672">.</span>value():  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>
+</span></span></code></pre></div><p>This line turns the touch sensor into a killswitch by breaking out of the while true loop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> error <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:   
+</span></span><span style="display:flex;"><span>        correction <span style="color:#f92672">=</span> (abs(float(error)<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>))<span style="color:#f92672">*</span>kp  
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (correction<span style="color:#f92672">+</span>power) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">or</span> (correction<span style="color:#f92672">+</span>power) <span style="color:#f92672">&lt;=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">100</span>:   
+</span></span><span style="display:flex;"><span>            correction <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(power)
+</span></span></code></pre></div><p>If <strong>error</strong> is less than 0, the Ev3 is too far from the car. The variable <strong>correction</strong> is <strong>error</strong> divided by 5 multiplied by the <strong>kp</strong> (constant of proportionality). <strong>Correction</strong> is added to <strong>power</strong> to change the final wheel speed, which speeds up the car (not shown here).</p>
 <p>The second if statement is just to make sure the final wheel speed is not above 100 or less than -100, otherwise the robot will error out.</p>
-<pre tabindex="0"><code>if error &amp;gt; 0:  
-        correction = -(power)
-</code></pre><p>If <strong>error</strong> is more than 0, the Ev3 is too close to the car. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
-<pre tabindex="0"><code>if error == 0:   
-        correction = -(power)
-</code></pre><p>If <strong>error</strong> is equal than 0, the Ev3 is the perfect distance from the car, which makes the Ev3 stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
-<pre tabindex="0"><code>if us.distance_centimeters == 255.0:  
-        correction = -(power)
-</code></pre><p>The ultrasonic sensor has an error where it randomly reads 255 cm, so this line makes sure it doesn’t glitch out and mess up the algorithm by making the car stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
-<pre tabindex="0"><code>print(str(target)+&amp;#34;, &amp;#34;+str(us.distance_centimeters)+&amp;#34;, &amp;#34;+str(error)+&amp;#34;, &amp;#34;+str(correction))
-</code></pre><p>This line is for debugging. It prints out the values of each of the important variables to figure out any issues with the robot.</p>
-<pre tabindex="0"><code>left_motor.duty_cycle_sp= int(-(power + correction)) right_motor.duty_cycle_sp= int(-(power + correction)) 
-</code></pre><p>These lines set the final wheel speed. I made the value negative because my robot’s wheels are backward.</p>
-<pre tabindex="0"><code>sleep(0.1)
-</code></pre><p>This line makes sure that the CPU doesn’t overheat.</p>
-<pre tabindex="0"><code>left_motor.stop()  
-right_motor.stop()
-</code></pre><p>When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> error <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:  
+</span></span><span style="display:flex;"><span>        correction <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(power)
+</span></span></code></pre></div><p>If <strong>error</strong> is more than 0, the Ev3 is too close to the car. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> error <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:   
+</span></span><span style="display:flex;"><span>        correction <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(power)
+</span></span></code></pre></div><p>If <strong>error</strong> is equal than 0, the Ev3 is the perfect distance from the car, which makes the Ev3 stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> us<span style="color:#f92672">.</span>distance_centimeters <span style="color:#f92672">==</span> <span style="color:#ae81ff">255.0</span>:  
+</span></span><span style="display:flex;"><span>        correction <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>(power)
+</span></span></code></pre></div><p>The ultrasonic sensor has an error where it randomly reads 255 cm, so this line makes sure it doesn’t glitch out and mess up the algorithm by making the car stop. The car stops by making <strong>correction</strong> the inverse of <strong>power</strong>, which makes the final wheel speed equal to 0.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>target<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>us<span style="color:#f92672">.</span>distance_centimeters<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>error<span style="color:#e6db74">}</span><span style="color:#e6db74">, </span><span style="color:#e6db74">{</span>correction<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>This line is for debugging. It prints out the values of each of the important variables to figure out any issues with the robot.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>left_motor<span style="color:#f92672">.</span>duty_cycle_sp<span style="color:#f92672">=</span> int(<span style="color:#f92672">-</span>(power <span style="color:#f92672">+</span> correction)) right_motor<span style="color:#f92672">.</span>duty_cycle_sp<span style="color:#f92672">=</span> int(<span style="color:#f92672">-</span>(power <span style="color:#f92672">+</span> correction)) 
+</span></span></code></pre></div><p>These lines set the final wheel speed. I made the value negative because my robot’s wheels are backward.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sleep(<span style="color:#ae81ff">0.1</span>)
+</span></span></code></pre></div><p>This line makes sure that the CPU doesn’t overheat.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>left_motor<span style="color:#f92672">.</span>stop()  
+</span></span><span style="display:flex;"><span>right_motor<span style="color:#f92672">.</span>stop()
+</span></span></code></pre></div><p>When the touch sensor breaks the loop, these lines make sure that the robot’s motors stop.</p>
 <p>And that’s it!</p>
 <p><em>Note from the author: This article was written in 2021 on my old blog on medium. I am reposting it here for archival purposes. This article has been modified to fit the new blog.</em></p>
 <hr>

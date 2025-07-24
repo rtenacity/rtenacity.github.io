@@ -7,7 +7,7 @@ draft: false
 categories: ["EV3", "Robotics", "ev3dev", "Old"]
 ---
 
-The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions surrounding the robot. I participated in two of them. How did it go? Let’s find out.
+The Mindstorms Ev3 Robot is a robot made by Lego. So obviously, there are competitions involving this robot. I participated in two of them. How did it go? Let’s find out.
 
 Let’s establish some context. My friend invited me to a robotics competition that his dad coached in summer of 2019. It was called First Lego League. It was all about making the Mindstorms Robot move around on this mat and do tasks on the mat, called missions. This is what the mat looked like:
 
@@ -25,15 +25,18 @@ In the 2020–2021 competition however, everything changed. We used something ca
 <center>{{< figure src="/img/fll2.webp" title="Diagram" >}}</center>
 {{</rawhtml>}}
 
-<!-- So this is all the software design. Let’s look at the hardware:
-{{<rawhtml>}}
-<a href = "https://vimeo.com/517806926" > Video of robot </a>
-{{</rawhtml>}} -->
+So this is all the software design. Let’s look at the hardware:
 
-Let’s look at the software design.  
+{{<rawhtml>}}
+
+<iframe src="https://player.vimeo.com/video/517806926" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+{{</rawhtml>}}
+
+Pretty neat, right? Now, let’s look at the software design.  
 
 This is the launcher code:
-~~~
+~~~python
 #!/usr/bin/env python3
 from ev3dev2.motor import *
 from ev3dev2.sensor.lego import *
@@ -55,7 +58,8 @@ sound.play_tone(440, 0.25)
 library.choice(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering,btn, sound)
 ~~~
 This program is fairly simple. It has standard imports, some typical definitions for the robot to run, and then it invokes the choice function from the library. The choice function is the main function that runs the robot. It is defined in the library.py file. Here is the code for the library.py file:
-~~~
+
+```python
 import bench
 import dance
 import bottom_right
@@ -80,16 +84,13 @@ def choice(tank, SpeedPercent, follow_for_ms, motor, mdiff, steering, btn, sound
             dance.dance_now(tank, steering)
 
 
-~~~
+```
+
 The choice function is a launcher for a program that we wrote to complete a mission. We used the buttons on the robot to define the variable `functionNumber`. Depending on the buttons that we pressed, the functionNumber would be different. This may seem extraneous, but this solves a major issue that ev3dev presents. If we were to do this normally and have a different program for each mission, the bootup time would be too long. So we used this launcher to invoke the function for each mission. <br/> Let’s take a look at the code for one of the missions:
 
-{{<rawhtml>}}
-<center>{{< figure src="/img/fll3.webp" title="The Stepper" >}}</center>
-{{</rawhtml>}}
+The goal is to push a green tab into the purple-and-black box.
 
-The goal is to push that green tab into the purple-and-black box.
-
-~~~
+```python
 from time import sleep
 def go(tank, SpeedPercent, follow_for_ms, motor, mdiff):
     #forward fast 63cm
@@ -100,7 +101,7 @@ for i in range(33):
     sleep(0.03)
 #backward fast 32cm
 tank.on_for_rotations(-50, -50, 10)
-~~~
+```
 
 
 No imports, as you can see. There is no need for them, as library.py has the imports.
