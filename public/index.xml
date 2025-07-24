@@ -6,8 +6,18 @@
     <description>Recent content on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jun 2025 09:10:42 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jul 2025 09:10:42 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Regression and Free Will</title>
+      <link>http://localhost:1313/posts/free-will-regression/</link>
+      <pubDate>Thu, 24 Jul 2025 09:10:42 -0500</pubDate>
+      <guid>http://localhost:1313/posts/free-will-regression/</guid>
+      <description>&lt;p&gt;Do we have free will? That’s a question that’s haunted many philosophers, scientists, and people contemplating their existence late at night. We might find some answers in linear regression, of all the places.&lt;/p&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;Linear regression can be simplified to drawing a line of best fit. Given any scattered set of data points, we want to create a line that best represents the shape of the data.
+A simple, 2D linear regression model is given by a general form&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Raytheon Radarange</title>
       <link>http://localhost:1313/posts/technology-radarange/</link>
