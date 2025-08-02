@@ -6,8 +6,16 @@
     <description>Recent content on rohanarni.com</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Jul 2025 09:10:42 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rockets and Momentum</title>
+      <link>http://localhost:1313/posts/rocket-equation/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/posts/rocket-equation/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s take a look at how a rocket works, based on only concepts from momentum. The basic idea is that we have a system of rocket and fuel with mass $m$ and velocity $v$. If we burn fuel and eject mass, we will gain velocity. But how can we quantify this relationship? Let&amp;rsquo;s begin with the derivation of the famous Tsiolkovsky rocket equation.&lt;/p&gt;
+&lt;p&gt;To begin, let&amp;rsquo;s identify the initial state of our system. At some time $t_i$, we have the momentum of our system as&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Linear Regression and Free Will</title>
       <link>http://localhost:1313/posts/free-will-regression/</link>
