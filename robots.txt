@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rtenacity.github.io/test-website/sitemap.xml
+Sitemap: https://rtenacity.github.io/sitemap.xml
