@@ -41,6 +41,39 @@ ninja.data = [{
             window.location.href = "/test-website/blog/2025/artificial-ethics/";
           
         },
+      },{id: "post-llms-as-philosophical-zombies",
+        
+          title: "LLMs as Philosophical Zombies",
+        
+        description: "Large Language Models (LLMs), the AI systems behind ChatGPT and similar tools, have reached new heights of popularity...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/llm-zombies/";
+          
+        },
+      },{id: "post-do-llms-have-free-will",
+        
+          title: "Do LLMs Have Free Will?",
+        
+        description: "Large Language Models (LLMs), the AI systems behind ChatGPT and similar tools, have reached new heights of popularity...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/llm-free-will/";
+          
+        },
+      },{id: "post-rockets-and-momentum",
+        
+          title: "Rockets and Momentum",
+        
+        description: "Let&#39;s take a look at how rockets work, based purely on momentum conservation...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/rockets/";
+          
+        },
       },{id: "post-linear-regression-and-free-will",
         
           title: "Linear Regression and Free Will",
@@ -50,6 +83,28 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/test-website/blog/2025/linear-regression/";
+          
+        },
+      },{id: "post-the-raytheon-radarange",
+        
+          title: "The Raytheon Radarange",
+        
+        description: "The Raytheon Radarange was the first commercially available microwave...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/radarange/";
+          
+        },
+      },{id: "post-altair-8800-advertisement",
+        
+          title: "Altair 8800 Advertisement",
+        
+        description: "This is an advertisement for the Altair 8800 personal computer in the Popular Electronics Magazine.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/altair/";
           
         },
       },{id: "post-existentialism-and-counterculture-through-american-history",
@@ -63,6 +118,17 @@ ninja.data = [{
             window.location.href = "/test-website/blog/2025/existentialism/";
           
         },
+      },{id: "post-the-social-contract-in-the-digital-age",
+        
+          title: "The Social Contract in the Digital Age",
+        
+        description: "We&#39;ve seen the rise of many great empires and nations–Romans and their expansive empire...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2024/social-contract/";
+          
+        },
       },{id: "post-intuition-behind-gauss-39-s-law",
         
           title: "Intuition Behind Gauss&#39;s Law",
@@ -72,6 +138,39 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/test-website/blog/2024/gauss-law/";
+          
+        },
+      },{id: "post-simple-harmonic-motion-isn-39-t-very-simple",
+        
+          title: "Simple Harmonic Motion Isn&#39;t Very Simple",
+        
+        description: "According to Google, an oscillator is a mechanical or electronic device that works on the principles...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2024/harmonic-motion/";
+          
+        },
+      },{id: "post-relativity-enter-einstein",
+        
+          title: "Relativity - Enter Einstein",
+        
+        description: "So, what was wrong with Galilean relativity? It help up perfectly well, until a Scottish...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2024/relativity2/";
+          
+        },
+      },{id: "post-relativity-pre-einstein",
+        
+          title: "Relativity - Pre-Einstein",
+        
+        description: "Relativity, we&#39;ve heard so much about it. Created by Einstein, it&#39;s lived in the minds of both physicists...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2024/relativity1/";
           
         },
       },{id: "post-hegelian-philosophy-and-the-modern-day",
@@ -85,6 +184,28 @@ ninja.data = [{
             window.location.href = "/test-website/blog/2023/hegel/";
           
         },
+      },{id: "post-the-starry-night",
+        
+          title: "The Starry Night",
+        
+        description: "Since the dawn of human civilization, the night sky has captivated us in a way that no other object has...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2023/starry-night/";
+          
+        },
+      },{id: "post-marbury-v-madison-the-first-supreme-court-case",
+        
+          title: "Marbury V. Madison - The First Supreme Court Case",
+        
+        description: "On February 24, 1803, the first and most influential supreme court case of America occurred...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2022/marbury-vs-madison/";
+          
+        },
       },{id: "post-ev3-projects-car-following",
         
           title: "Ev3 Projects - Car Following",
@@ -94,6 +215,72 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/test-website/blog/2022/car-follow/";
+          
+        },
+      },{id: "post-blue-snowball-microphone-review",
+        
+          title: "Blue Snowball Microphone Review",
+        
+        description: "Well, it’s time for my first tech review! Today, I’m gonna be talking about my new microphone, the Blue Snowball!...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/blue-snowball/";
+          
+        },
+      },{id: "post-china",
+        
+          title: "China",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/china/";
+          
+        },
+      },{id: "post-the-periodic-table-of-elements",
+        
+          title: "The Periodic Table of Elements",
+        
+        description: "It&#39;s on every high school classroom. But only a few people truly understand the secrets that the table holds...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/ptable/";
+          
+        },
+      },{id: "post-my-favorite-books",
+        
+          title: "My Favorite Books",
+        
+        description: "I love to read. Like, LOVE to read. As such, there are some books...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/fav-books/";
+          
+        },
+      },{id: "post-the-rise-fall-and-rise-again-of-minecraft",
+        
+          title: "The Rise, Fall, and Rise Again of Minecraft",
+        
+        description: "Minecraft - A classic example of trends reviving a once popular game...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/minecraft/";
+          
+        },
+      },{id: "post-the-big-bang",
+        
+          title: "The Big Bang",
+        
+        description: "The Big Bang is the cosmic event that started the entire universe...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/big-bang/";
           
         },
       },{id: "post-chess-openings-part-2-gambits",
@@ -127,6 +314,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/test-website/blog/2021/chess-one/";
+          
+        },
+      },{id: "post-welcome",
+        
+          title: "Welcome!",
+        
+        description: "Polymath (pol·y·math) - a person of wide-ranging knowledge or learning.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2020/welcome/";
           
         },
       },{id: "post-template",
