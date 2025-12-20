@@ -1,15 +1,12 @@
 ---
 layout: post
-title: a post with plotly.js
-date: 2025-03-26 14:24:00
-description: this is what included plotly.js code could look like
-tags: formatting chartsl
-categories: sample-posts
-chart:
-  plotly: true
+title: Artificial Ethics
+date: 2025-10-18T09:10:42-05:00
+description: In my previous posts, we established that Large Language Models display functional free will through chance...
+categories: philosophy artificial-intelligence
 ---
 
-In my previous posts, we established that Large Language Models display functional free will through chance, choice, and regret, yet lack consciousness. This creates philosophical zombies that challenge our assumptions about the relationship between consciousness, moral agency, and ethics. Now we must address the practical question: how do we govern these unconscious but autonomous agents?
+In my previous posts, we established that Large Language Models display functional free will through chance, choice, and regret, yet lack consciousness. This creates philosophical zombies that challenge our assumptions about the relationship bdetween consciousness, moral agency, and ethics. Now we must address the practical question: how do we govern these unconscious but autonomous agents?
 
 This framework can guide how we should treat systems that can act independently but aren't conscious. We can lay out artificial ethics as a set of guiding principles to resolve the problems we've discussed.
 
