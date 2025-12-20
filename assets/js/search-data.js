@@ -41,6 +41,83 @@ ninja.data = [{
             window.location.href = "/test-website/blog/2025/artificial-ethics/";
           
         },
+      },{id: "post-linear-regression-and-free-will",
+        
+          title: "Linear Regression and Free Will",
+        
+        description: "Do we have free will? That’s a question that’s haunted many philosophers, scientists, and people contemplating...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/linear-regression/";
+          
+        },
+      },{id: "post-existentialism-and-counterculture-through-american-history",
+        
+          title: "Existentialism and Counterculture Through American History",
+        
+        description: "From the moment we are born, there are expectations placed on us...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2025/existentialism/";
+          
+        },
+      },{id: "post-intuition-behind-gauss-39-s-law",
+        
+          title: "Intuition Behind Gauss&#39;s Law",
+        
+        description: "Gauss&#39;s Law is a law that relates the flux of the electric field on a surface...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2024/gauss-law/";
+          
+        },
+      },{id: "post-hegelian-philosophy-and-the-modern-day",
+        
+          title: "Hegelian Philosophy and the Modern Day",
+        
+        description: "The present can seem like a very unstable and turbulent time. It seems as if...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2023/hegel/";
+          
+        },
+      },{id: "post-ev3-projects-car-following",
+        
+          title: "Ev3 Projects - Car Following",
+        
+        description: "This article is about a project I did with my Ev3 robot...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2022/car-follow/";
+          
+        },
+      },{id: "post-chess-openings-part-2-gambits",
+        
+          title: "Chess Openings, Part 2 - Gambits",
+        
+        description: "Last week, I went over openings. Let’s recap the basics...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/chess-two/";
+          
+        },
+      },{id: "post-first-lego-league",
+        
+          title: "First Lego League",
+        
+        description: "The Mindstorms Ev3 Robot is a robot made by Lego. So obviously...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2021/fll/";
+          
+        },
       },{id: "post-chess-the-basics",
         
           title: "Chess — The Basics",
@@ -50,6 +127,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/test-website/blog/2021/chess-one/";
+          
+        },
+      },{id: "post-template",
+        
+          title: "Template",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/test-website/blog/2000/template/";
           
         },
       },{id: "books-ethics",
