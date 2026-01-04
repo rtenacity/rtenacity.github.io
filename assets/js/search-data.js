@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-artificial-ethics",
+        },{id: "post-a-good-man-is-hard-to-find-part-1",
+        
+          title: "A Good Man is Hard To Find (Part 1)",
+        
+        description: "For the past few months, I’ve been reading about what makes a “good” person. There’s about a million different ways of answering this question, but I was...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/gita-republic-good/";
+          
+        },
+      },{id: "post-artificial-ethics",
         
           title: "Artificial Ethics",
         
