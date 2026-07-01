@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-a-good-man-is-hard-to-find-part-1",
+        },{id: "post-hume-the-great-disentangler-ft-descartes",
+        
+          title: "Hume, The Great Disentangler (ft. Descartes)",
+        
+        description: "Science, religion, and philosophy, despite their differences, share their origins ...",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/hume/";
+          
+        },
+      },{id: "post-a-good-man-is-hard-to-find-part-1",
         
           title: "A Good Man is Hard To Find (Part 1)",
         
