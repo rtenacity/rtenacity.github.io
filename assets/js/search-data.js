@@ -34,7 +34,7 @@ ninja.data = [{
         
           title: "Hume, The Great Disentangler (ft. Descartes)",
         
-        description: "Science, religion, and philosophy, despite their differences, share their origins ...",
+        description: "Science, religion, and philosophy, despite their differences, share their origins in one question — what is the ...",
         section: "Posts",
         handler: () => {
           
