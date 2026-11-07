@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Senior at <u>High Technology High School</u>, Incoming Freshman at <u>Princeton University</u>.
+subtitle: Freshman at <u>Princeton University</u>.
 
 profile:
   align: right
@@ -27,10 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I’m a senior at High Technology High School and an incoming undergraduate at Princeton University. I’m interested in physics, philosophy, and machine learning. I plan to major in physics at Princeton, while minoring in philosophy and computer science.
+Hi there! I’m a freshman at Princeton University. I plan to major in physics at Princeton, while minoring in philosophy and applied mathematics.
 
 My research focuses on applying computational techniques to physics problems, particularly in the areas of dark matter and astrophysics. I'm also interested in physics-informed machine learning and its applications to speeding up simulations in across disciplines. You can view my [publications](/publications/) to learn more about my work.
-
-In school, I'm involved with the quizbowl team, robotics club (& competitive VEX robotics), and the Mathworks Math Modeling Challenge (M3 Challenge) team. 
 
 
